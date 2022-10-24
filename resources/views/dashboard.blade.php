@@ -15,7 +15,7 @@
 <body>
 
 	<header>
-		<div class="container">
+		<div class="container-fluid">
 			<nav class="navbar navbar-expand bg-dark">
 				<a href="percobaan2.html" class="navbar-brand text-white">PIKET KELAS</a>
 				<div class="navbar-nav ms-auto">
