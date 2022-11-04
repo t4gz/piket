@@ -22,5 +22,5 @@ Route::get('/home', function () {
 });
 
 Route::get('/dash', function () {
-    return view('dashboard');
+    return view('master.dashboard');
 });
