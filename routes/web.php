@@ -22,5 +22,10 @@ Route::get('/home', function () {
 });
 
 Route::get('/dash', function () {
-    return view('master.dashboard');
+    return view('master.dashboard_admin');
 });
+
+Route::get('/guest', function () {
+    return view('master.standard_page');
+});
+
