@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Hello @yield('title')</title>
+    <title>@yield('title')</title>
     @include('master.head')
 </head>
 
