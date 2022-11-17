@@ -20,3 +20,12 @@ Route::get('/', function () {
 Route::get('/home', function () {
     return view('');
 });
+
+Route::get('/dash', function () {
+    return view('master.dashboard_admin');
+});
+
+Route::get('/guest', function () {
+    return view('master.standard_page');
+});
+
