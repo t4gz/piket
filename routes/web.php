@@ -1,5 +1,6 @@
 <?php
 
+
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\DashboardController;
@@ -18,8 +19,10 @@ use App\Http\Controllers\DashboardController;
 Route::middleware('guest')->group(function(){
     Route::get('login', [LoginController::class, 'index'])->name('login');
     Route::post('login', [LoginController::class, 'authenticate']);
-    Route::get('/', function () {return view('standard_page');});
+    Route::get('/', function () 
+        {return view('standard_page');});
 });
+
 
 Route::middleware('auth')->group(function(){
     //dashboard
