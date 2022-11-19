@@ -21,15 +21,15 @@
             <!-- Divider -->
             <hr class="sidebar-divider">
             <li class="nav-item">
-                <a class="nav-link" href="/mastersiswa">
+                <a class="nav-link" href="/siswa">
                 <i class="fas fa-fw fa-user"></i>
-                    <span>Master Siswa</span></a>
+                    <span>Siswa</span></a>
             </li>
 
             <li class="nav-item">
-                <a class="nav-link" href="/masterproject">
+                <a class="nav-link" href="/laporan">
                     <i class="fas fa-fw fa-book"></i>
-                    <span>Master Project</span></a>
+                    <span>Laporan</span></a>
             </li>
 
             <li class="nav-item">
