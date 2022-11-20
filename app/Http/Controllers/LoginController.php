@@ -22,7 +22,13 @@ class LoginController extends Controller
         if (Auth::attempt($data)) {
             $request->session()->regenerate();
 
-            return redirect()->intended('/dashboard');
+            if(auth()->user()->role=='admin'){
+                return redirect()->intended('/admin');
+            }
+
+            if(auth()->user()->role=='siswa'){
+                return redirect()->intended('/siswa');
+            }
         }
 
         return back()->withErrors([
@@ -35,6 +41,6 @@ class LoginController extends Controller
         Auth::logout();
         $request->session()->invalidate();
         $request->session()->regenerateToken();
-        return redirect('/dashboard');
+        return redirect('/login');
     }
 }
