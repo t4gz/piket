@@ -1,3 +1,4 @@
+@extends('master.script')
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -21,7 +22,7 @@
 </head>
 <body>
   <!-- Navigation -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+<nav class="navbar navbar-expand navbar-light bg-dark topbar mb-4 static-top shadow">
   <div class="container" style="font-size: 20px ;">
     <a class="navbar-brand" href="#">
       <img src="../images/logo_smk.png" alt="Logo" height="60" > 
@@ -30,17 +31,32 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ms-auto">
+      <ul class="navbar-nav ml-auto">
         <li class="nav-item">
           <a class="nav-link" href="#">Laporan</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Absen</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link active" href="#">Logout</a>
+
+        <div class="topbar-divider d-none d-sm-block"></div>
+        @auth
+        <li class="nav-item dropdown no-arrow">
+            <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="mr-2 d-none d-lg-inline text-white-600 small">{{auth()->user()->name}}</span>
+                <img class="img-profile rounded-circle"
+                    src="{{ asset('template/img/undraw_profile.svg') }}">
+            </a>
+            <!-- Dropdown - User Information -->
+            <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"aria-labelledby="userDropdown">
+                <!-- <div class="dropdown-divider"></div> -->
+                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal"><i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+                    Logout
+                </a>
+            </div>
         </li>
-        <!-- <li class="nav-item dropdown">
+        @endauth        <!-- <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Dropdown
           </a>
