@@ -1,6 +1,6 @@
 @extends('master.admin')
 @section('title', 'Dashboard')
-@section('content-title', 'Selamat datang, '.auth()->user()->name)
+@section('content-title', 'Selamat datang')
 @section('content')
 <div class="row">
     <!-- Earnings (Monthly) Card Example -->

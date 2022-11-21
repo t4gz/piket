@@ -21,6 +21,15 @@ Route::middleware('guest')->group(function(){
     Route::post('login', [LoginController::class, 'authenticate']);
     Route::get('/', function () 
         {return view('standard_page');});
+        //
+    Route::get('/dash-siswa', function () 
+    {return view('dashboard_siswa');}); 
+    Route::get('/dash-admin', function () 
+    {return view('admin.dashboard_admin');});     
+    Route::get('/lapor-siswa', function () 
+    {return view('siswa.laporan_siswa');}); 
+    Route::get('/absen-siswa', function () 
+    {return view('siswa.absen_siswa');});
 });
 
 
