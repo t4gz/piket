@@ -4,6 +4,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\DashboardSiswaController;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,23 +22,16 @@ Route::middleware('guest')->group(function(){
     Route::post('login', [LoginController::class, 'authenticate']);
     Route::get('/', function () 
         {return view('standard_page');});
-        //
-    Route::get('/dash-siswa', function () 
-    {return view('dashboard_siswa');}); 
-    Route::get('/dash-admin', function () 
-    {return view('admin.dashboard_admin');});     
-    Route::get('/lapor-siswa', function () 
-    {return view('siswa.laporan_siswa');}); 
-    Route::get('/absen-siswa', function () 
-    {return view('siswa.absen_siswa');});
 });
 
 
-Route::middleware('auth')->group(function(){
+Route::middleware(['auth', 'role:admin'])->group(function(){
     //dashboard
-    Route::resource('dashboard', DashboardController::class);
-
-    //logout
-    Route::post('logout', [LoginController::class, 'logout']);
+    Route::resource('admin', DashboardController::class);
 });
 
+    //dashboard siswa
+    Route::resource('siswa', DashboardSiswaController::class);
+
+//logout
+    Route::post('logout', [LoginController::class, 'logout'])->middleware('auth');
