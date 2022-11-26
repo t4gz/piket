@@ -22,6 +22,12 @@ Route::middleware('guest')->group(function(){
     Route::post('login', [LoginController::class, 'authenticate']);
     Route::get('/', function () 
         {return view('standard_page');});
+        Route::get('laporan_admin', function () 
+        {return view('admin.laporan_admin');});
+        Route::get('siswa_admin', function () 
+        {return view('admin.siswa_admin');});
+        Route::get('siswa1', function () 
+        {return view('siswa.dashboard_siswa');});
 });
 
 

@@ -32,12 +32,6 @@
                     <span>Laporan</span></a>
             </li>
 
-            <li class="nav-item">
-                <a class="nav-link" href="/masterkontak">
-                    <i class="fas fa-fw fa-address-card"></i>
-                    <span>Master Kontak</span></a>
-            </li>
-
             <!-- Heading -->
             <!-- <div class="sidebar-heading">
                 Interface
