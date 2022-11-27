@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\DashboardSiswaController;
+use App\Http\Controllers\RegisterController;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,24 +21,27 @@ use App\Http\Controllers\DashboardSiswaController;
 Route::middleware('guest')->group(function(){
     Route::get('login', [LoginController::class, 'index'])->name('login');
     Route::post('login', [LoginController::class, 'authenticate']);
-    Route::get('/', function () 
-        {return view('standard_page');});
-        Route::get('laporan_admin', function () 
-        {return view('admin.laporan_admin');});
-        Route::get('siswa_admin', function () 
-        {return view('admin.siswa_admin');});
-        Route::get('siswa1', function () 
-        {return view('siswa.dashboard_siswa');});
+    Route::resource('register', RegisterController::class);
+    Route::get('/', function () {
+        return view('standard_page');});
 });
 
 
 Route::middleware(['auth', 'role:admin'])->group(function(){
     //dashboard
     Route::resource('admin', DashboardController::class);
+
+    Route::get('laporan-admin', function () {
+        return view('admin.laporan_admin');});
+
+    Route::get('siswa-admin', function () {
+        return view('admin.siswa_admin');});
 });
 
+Route::middleware(['auth', 'role:siswa'])->group(function(){
     //dashboard siswa
     Route::resource('siswa', DashboardSiswaController::class);
+});
 
 //logout
     Route::post('logout', [LoginController::class, 'logout'])->middleware('auth');

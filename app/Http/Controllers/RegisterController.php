@@ -3,8 +3,10 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Session;
+use App\Models\User;
 
-class DashboardSiswaController extends Controller
+class RegisterController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -13,8 +15,7 @@ class DashboardSiswaController extends Controller
      */
     public function index()
     {
-        return view('siswa.dashboard_siswa');
-    }
+        return view('register');    }
 
     /**
      * Show the form for creating a new resource.
@@ -34,7 +35,29 @@ class DashboardSiswaController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $message = [
+            'required' => ':attribute isi woi',
+            'min' => ':attribute minimal :min karakter woi',
+            'max' => ':attribute maksimal :max karakter woi',
+        ];
+
+        $this->validate($request, [
+
+            'name' => 'required|min:7|max:30',
+            'email' => 'required',
+            'password' => 'required',
+        ], $message);
+
+        //insert data
+        User::create([
+            'name' => $request-> name,
+            'email' => $request-> email,
+            'role' => 'siswa',
+            'password' => bcrypt($request-> password),
+        ]);
+
+        Session::flash('sukses', 'Berhasil Membuat Akun !! Silahkan Login');
+        return redirect('/login');
     }
 
     /**
