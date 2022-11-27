@@ -21,13 +21,13 @@
             <!-- Divider -->
             <hr class="sidebar-divider">
             <li class="nav-item">
-                <a class="nav-link" href="/siswa">
+                <a class="nav-link" href="/siswa-admin">
                 <i class="fas fa-fw fa-user"></i>
                     <span>Siswa</span></a>
             </li>
 
             <li class="nav-item">
-                <a class="nav-link" href="/laporan">
+                <a class="nav-link" href="/laporan-admin">
                     <i class="fas fa-fw fa-book"></i>
                     <span>Laporan</span></a>
             </li>
