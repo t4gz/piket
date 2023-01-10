@@ -1,5 +1,8 @@
 @extends('master.admin')
-@section('title', 'Dashboard Absensi')
-@section('content-title', 'Absensi')
+@section('title', 'Data Siswa')
+@section('content-title', 'Siswa')
 @section('content')
+<div class="mx-auto">
+    
+    </div>
 @endsection

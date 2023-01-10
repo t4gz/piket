@@ -6,7 +6,7 @@ use App\Http\Controllers\LoginController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\DashboardSiswaController;
 use App\Http\Controllers\RegisterController;
-
+use App\Http\Controllers\SiswaController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -34,8 +34,7 @@ Route::middleware(['auth', 'role:admin'])->group(function(){
     Route::get('laporan-admin', function () {
         return view('admin.laporan_admin');});
 
-    Route::get('siswa-admin', function () {
-        return view('admin.siswa_admin');});
+    Route::resource('siswa-admin', SiswaController::class);
 });
 
 Route::middleware(['auth', 'role:siswa'])->group(function(){
