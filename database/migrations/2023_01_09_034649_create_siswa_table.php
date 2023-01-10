@@ -15,10 +15,10 @@ return new class extends Migration
     {
         Schema::create('siswa', function (Blueprint $table) {
             $table->id();
-            $table->char('nisn');
             $table->string('nama');
+            $table->string('nisn');
             $table->string('alamat');
-            $table->char('jk');
+            $table->string('jk');
             $table->timestamps();
         });
     }

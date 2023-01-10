@@ -38,10 +38,10 @@
           <a class="nav-link" href="#">Laporan</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" href="#">Login</a>
+          <a class="nav-link active" href="/login">Login</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" href="#">Register</a>
+          <a class="nav-link active" href="/register">Register</a>
         </li>
         <!-- <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
