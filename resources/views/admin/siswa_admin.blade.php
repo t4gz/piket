@@ -2,8 +2,6 @@
 @section('title', 'Data Siswa')
 @section('content-title', 'Siswa')
 @section('content')
-<<<<<<< HEAD
-=======
 
 @if($message = Session::get('success'))
     <div class="alert alert-success alert-block">
@@ -50,5 +48,4 @@
     </div>
 </div>
 
->>>>>>> 6b9959b971f8207c6f3ca0356d228adfd51ab47f
 @endsection
