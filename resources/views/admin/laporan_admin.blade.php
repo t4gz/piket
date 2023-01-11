@@ -9,7 +9,7 @@
 			        <i class="fas fa-user me-1" style="margin-right: 5px;"></i>
 			        Data Siswa
 			    </div>
-                <div>
+                <div class="card mb-6">
                         <table class="table table-bordered table-responsive">
                     <thead>
                         <tr>
@@ -27,8 +27,8 @@
                         <td>0054312345</td>
                         <td>Sudah Melaksanakan Piket</td>
                         <td>
-                            <a href="#" class="btn btn-sm btn-info btn-circle"><i class="fas fa-info"></i></a>
-                            <a href="#" class="btn btn-sm btn-warning btn-circle"><i class="fas fa-edit"></i></a>
+                            <a href="#" class="btn btn-sm btn-info"><i class="fas fa-info"></i></a>
+                            <a href="#" class="btn btn-sm btn-warning"><i class="fas fa-edit"></i></a>
                         </td>
                         </tr>
                         <tr>
@@ -37,8 +37,8 @@
                         <td>0051232112</td>
                         <td>Belum Melaksanakan Piket</td>
                         <td>
-                            <a href="#" class="btn btn-sm btn-info btn-circle"><i class="fas fa-info"></i></a>
-                            <a href="#" class="btn btn-sm btn-warning btn-circle"><i class="fas fa-edit"></i></a>
+                            <a href="#" class="btn btn-sm btn-info"><i class="fas fa-info"></i></a>
+                            <a href="#" class="btn btn-sm btn-warning"><i class="fas fa-edit"></i></a>
                         </td>
                         </tr>
                         <tr>
@@ -47,8 +47,8 @@
                         <td>0053212365</td>
                         <td>Sudah Melaksanakan piket</td>
                         <td>
-                            <a href="#" class="btn btn-sm btn-info btn-circle"><i class="fas fa-info"></i></a>
-                            <a href="#" class="btn btn-sm btn-warning btn-circle"><i class="fas fa-edit"></i></a>
+                            <a href="#" class="btn btn-sm btn-info"><i class="fas fa-info"></i></a>
+                            <a href="#" class="btn btn-sm btn-warning"><i class="fas fa-edit"></i></a>
                         </td>
                         </tr>
                     </tbody>

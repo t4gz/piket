@@ -22,7 +22,7 @@
 
 </head>
 
-<body class="bg-gradient-primary">
+<body class="bg-dark">
 
     <div class="container">
 
@@ -63,18 +63,13 @@
                     <div class="form-group">
                         <input type="password" class="form-control form-control-user" id="exampleInputPassword" name="password" placeholder="Password">
                     </div>
-                    <div class="form-group">
-                        <div class="custom-control custom-checkbox small">
-                            <input type="checkbox" class="custom-control-input" id="customCheck">
-                            <label class="custom-control-label" for="customCheck">Remember Me</label>
-                        </div>
-                    </div>
-                    <input type="submit" value="LOGIN" class="btn btn-primary btn-user btn-block">
+                    
+                    <input type="submit" value="LOGIN" class="btn btn-dark btn-user btn-block">
                                         
                 </form>
                 <hr>
                 <div class="text-center">
-                    <a class="small" href="/register">Ga Punya Akun Kah Deck ? Register Dulu !!</a>
+                    <a class="small text-dark" href="/register">Ga Punya Akun Kah Deck ? Register Dulu !!</a>
                 </div>
                                 </div>
                             </div>

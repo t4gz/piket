@@ -81,60 +81,7 @@
         </div>
     </div>
 
-    <!-- Edit Siswa -->
-    <div class="modal fade" id="editSiswa" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Edit Siswa</h5>
-                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">×</span>
-                    </button>
-                </div>
-                @if(count($errors)>0)
-                    <div class="alert alert-danger">
-                        <ul>
-                            @foreach($errors->all() as $item)
-                                <li>
-                                    {{$item}}
-                                </li>
-                            @endforeach
-                        </ul>
-                    </div>
-
-                @endif
-                <form method="post" enctype="multipart/form-data" action="{{ route('siswa-admin.update', $siswa->id) }}">
-                    @csrf
-                    @method('PUT')
-                <div class="form-group">
-                        <label for="nama">NAMA : </label>
-                        <input type="text" class="form-control" id="nama" name="nama" value="{{$siswa->nama}}">
-                    </div>
-                    <div class="form-group">
-                        <label for="nisn">NISN : </label>
-                        <input type="text" class="form-control" id="nisn" name="nisn" value="{{$siswa->nisn}}">
-                    </div>
-                    <div class="form-group">
-                        <label for="alamat">ALAMAT : </label>
-                        <input type="text" class="form-control" id="alamat" name="alamat" value="{{$siswa->alamat}}">
-                    </div>
-                    <div class="form-group">
-                        <label for="jk">JENIS KELAMIN : </label>
-                        <select class="form-select form-control" id="jk" name="jk">
-                            <option value="Laki" @if($siswa->jk == 'laki') selected @endif>Laki</option>
-                            <option value="Perempuan" @if($siswa->jk == 'perempuan') selected @endif>Perempuan</option>
-                            <option value="Lainnya" @if($siswa->jk == 'lainnya') selected @endif>Lainnya</option>
-                        </select>
-                    </div>
-                <div class="modal-footer">
-                    <input type="submit" class="btn btn-success" value="Save">
-                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                </div>
-                </form>
-            </div>
-        </div>
-    </div>
-
+    
     <!-- Bootstrap core JavaScript-->
     <script src="{{ asset('template/vendor/jquery/jquery.min.js') }}"></script>
     <script src="{{ asset('template/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
