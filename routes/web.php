@@ -33,6 +33,7 @@ Route::middleware(['auth', 'role:admin'])->group(function(){
 
     Route::get('laporan-admin', function () {
         return view('admin.laporan_admin');});
+    
 
     Route::resource('siswa-admin', SiswaController::class);
 });
@@ -40,6 +41,15 @@ Route::middleware(['auth', 'role:admin'])->group(function(){
 Route::middleware(['auth', 'role:siswa'])->group(function(){
     //dashboard siswa
     Route::resource('siswa', DashboardSiswaController::class);
+
+    Route::get ('absen', function() {
+        return view ('siswa.absen_siswa');});
+    
+    Route::get ('laporan', function () {
+        return view ('siswa.laporan_siswa');
+    });
+    
+
 });
 
 //logout

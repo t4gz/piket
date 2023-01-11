@@ -36,7 +36,7 @@
           <a class="nav-link" href="#">Laporan</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Absen</a>
+          <a class="nav-link" href="/absen">Absen</a>
         </li>
 
         <div class="topbar-divider d-none d-sm-block"></div>
@@ -79,7 +79,7 @@
 <br>
 
 <div class="container">
-  <h1 class="text-center">Jadwal piket</h1>
+  <h1 class="text-center">Jadwal piket hari ini</h1>
 </div>
 
 <br>
@@ -102,7 +102,6 @@
       <td>0004282719</td>
       <td>
         <a href="#" class="btn btn-sm btn-info btn-circle"><i class="fas fa-info"></i></a>
-        <a href="#" class="btn btn-sm btn-warning btn-circle"><i class="fas fa-edit"></i></a>
       </td>
     </tr>
     <tr>
@@ -111,7 +110,6 @@
       <td>0052829183</td>
       <td>
         <a href="#" class="btn btn-sm btn-info btn-circle"><i class="fas fa-info"></i></a>
-        <a href="#" class="btn btn-sm btn-warning btn-circle"><i class="fas fa-edit"></i></a>
       </td>
     </tr>
     <tr>
@@ -120,7 +118,6 @@
       <td>0042382193</td>
       <td>
         <a href="#" class="btn btn-sm btn-info btn-circle"><i class="fas fa-info"></i></a>
-        <a href="#" class="btn btn-sm btn-warning btn-circle"><i class="fas fa-edit"></i></a>
       </td>
     </tr>
     <tr>
@@ -129,7 +126,6 @@
       <td>0042738293</td>
       <td>
         <a href="#" class="btn btn-sm btn-info btn-circle"><i class="fas fa-info"></i></a>
-        <a href="#" class="btn btn-sm btn-warning btn-circle"><i class="fas fa-edit"></i></a>
       </td>
     </tr>
     <tr>
@@ -138,7 +134,6 @@
       <td>0042383823</td>
       <td>
         <a href="#" class="btn btn-sm btn-info btn-circle"><i class="fas fa-info"></i></a>
-        <a href="#" class="btn btn-sm btn-warning btn-circle"><i class="fas fa-edit"></i></a>
       </td>
     </tr>
   </tbody>
