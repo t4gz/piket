@@ -3,14 +3,14 @@
 @section('content-title', 'Laporan')
 @section('content')
 <div class="row">
-        <div class="col-lg-4">
+        <div class="col-lg-6">
                 <div class="card mb-4">
                 <div style="font-weight: 500;" class="card-header bg-dark text-white">
-			        <i class="fas fa-user me-1" style="margin-right: 5px;"></i>
-			        Data Siswa
+			        <i class="fas fa-book me-1" style="margin-right: 5px;"></i>
+			        Data Laporan
 			    </div>
                 <div>
-                        <table class="table table-bordered">
+                        <table class="table">
                     <thead>
                         <tr>
                         <th scope="col">No.</th>
@@ -57,7 +57,7 @@
                 </div>
 
             <div class="col-lg-8"> 
-                <table class="table table-responsive table-hover table-bordered">
+                <table class="table">
 
                 </table>
             </div>
