@@ -36,14 +36,7 @@ class SiswaController extends Controller
      */
     public function store(Request $request)
     {
-        $validasi = $request->validate([
-            'nama' => 'required',
-            'nisn' => 'required',
-            'alamat' => 'required',
-            'jk' => 'required',
-        ]);
-        Siswa::create($validasi);
-        return redirect('/siswa-admin')->with('success', 'Siswa Berhasil Ditambah');
+        // 
     }
 
     /**

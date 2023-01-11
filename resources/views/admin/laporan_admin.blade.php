@@ -4,13 +4,22 @@
 @section('content')
 <div class="row">
         <div class="col-lg-6">
+<<<<<<< HEAD
+                <div class="card mb-4">
+=======
                 <div class="card mb-6">
+>>>>>>> fc6d4c418440aceb73d8921fc7c86e5721f9554c
                 <div style="font-weight: 500;" class="card-header bg-dark text-white">
-			        <i class="fas fa-user me-1" style="margin-right: 5px;"></i>
-			        Data Siswa
+			        <i class="fas fa-book me-1" style="margin-right: 5px;"></i>
+			        Data Laporan
 			    </div>
+<<<<<<< HEAD
+                <div>
+                        <table class="table">
+=======
                 <div class="card mb-6">
                         <table class="table table-bordered table-responsive">
+>>>>>>> fc6d4c418440aceb73d8921fc7c86e5721f9554c
                     <thead>
                         <tr>
                         <th scope="col">No.</th>
@@ -57,6 +66,13 @@
             </div>
                 </div>
 
+<<<<<<< HEAD
+            <div class="col-lg-8"> 
+                <table class="table">
+
+                </table>
+            </div>
+=======
                 <div class="col-lg-6">
 			<div class="card shadow mb-4" style="border: 1px solid #bbb;">
 		        <div style="font-weight: 500;" class="card-header bg-dark text-white">
@@ -70,5 +86,6 @@
 			    </div>
 		    </div>
 		</div>
+>>>>>>> fc6d4c418440aceb73d8921fc7c86e5721f9554c
 </div>
 @endsection

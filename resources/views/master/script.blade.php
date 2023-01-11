@@ -81,7 +81,10 @@
         </div>
     </div>
 
+<<<<<<< HEAD
+=======
     
+>>>>>>> fc6d4c418440aceb73d8921fc7c86e5721f9554c
     <!-- Bootstrap core JavaScript-->
     <script src="{{ asset('template/vendor/jquery/jquery.min.js') }}"></script>
     <script src="{{ asset('template/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
