@@ -20,7 +20,7 @@
 
 
 
-<body class="bg-gradient-primary">
+<body class="bg-dark">
 
     <div class="container">
 
@@ -59,12 +59,12 @@
                                     <input type="password" class="form-control form-control-user" id="password" name="password" placeholder="Password">
                                 </div>
                                 <div class="form-group">
-                                    <input type="submit" value="Register" class="btn btn-primary btn-user btn-block">
+                                    <input type="submit" value="Register" class="btn btn-dark btn-user btn-block">
                                 </div>
                             </form>
                             <hr>
                             <div class="text-center">
-                                <a class="small" href="/login">Already have an account? Login!</a>
+                                <a class="small text-dark" href="/login">Wes duwe akun? Login!</a>
                             </div>
                         </div>
                     </div>
