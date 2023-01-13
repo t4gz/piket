@@ -1,6 +1,6 @@
 @extends('master.admin')
-@section('title', 'Data Siswa')
-@section('content-title', 'Siswa')
+@section('title', 'Data Guru')
+@section('content-title', 'Guru')
 @section('content')
 
 @if($message = Session::get('success'))
@@ -14,7 +14,7 @@
     <div class="card shadow mb-4">
         <div class="card-header bg-dark text-white py-3">
             <i class="fas fa-user me-1" style="margin-right: 5px;"></i>
-            Data Siswa
+            Data Guru
         </div>
         <div class="card-body">
             <table class="table table-striped">

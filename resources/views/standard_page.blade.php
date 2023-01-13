@@ -23,20 +23,14 @@
   <!-- Navigation -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
   <div class="container" style="font-size: 20px ;">
-    <a class="navbar-brand" href="#">
+    <a class="navbar-brand" href="/">
       <img src="../images/logo_smk.png" alt="Logo" height="60" > 
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item">
-          <a class="nav-link" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Laporan</a>
-        </li>
+      <ul class="navbar-nav ms-auto">        <
         <li class="nav-item">
           <a class="nav-link active" href="/login">Login</a>
         </li>
@@ -85,47 +79,42 @@
   <tbody>
     <tr>
       <th scope="row">1</th>
-      <td>Mark</td>
+      <td>ammar</td>
       <td>0004282719</td>
       <td>
         <a href="#" class="btn btn-sm btn-info btn-circle"><i class="fas fa-info"></i></a>
-        <a href="#" class="btn btn-sm btn-warning btn-circle"><i class="fas fa-edit"></i></a>
       </td>
     </tr>
     <tr>
       <th scope="row">2</th>
-      <td>Jacob</td>
+      <td>rafif</td>
       <td>0052829183</td>
       <td>
         <a href="#" class="btn btn-sm btn-info btn-circle"><i class="fas fa-info"></i></a>
-        <a href="#" class="btn btn-sm btn-warning btn-circle"><i class="fas fa-edit"></i></a>
       </td>
     </tr>
     <tr>
       <th scope="row">3</th>
-      <td>Larry the Bird</td>
+      <td>ilham</td>
       <td>0042382193</td>
       <td>
         <a href="#" class="btn btn-sm btn-info btn-circle"><i class="fas fa-info"></i></a>
-        <a href="#" class="btn btn-sm btn-warning btn-circle"><i class="fas fa-edit"></i></a>
       </td>
     </tr>
     <tr>
       <th scope="row">4</th>
-      <td>Reja</td>
+      <td>dwi</td>
       <td>0042738293</td>
       <td>
         <a href="#" class="btn btn-sm btn-info btn-circle"><i class="fas fa-info"></i></a>
-        <a href="#" class="btn btn-sm btn-warning btn-circle"><i class="fas fa-edit"></i></a>
       </td>
     </tr>
     <tr>
       <th scope="row">5</th>
-      <td>Rahmad</td>
+      <td>tora</td>
       <td>0042383823</td>
       <td>
         <a href="#" class="btn btn-sm btn-info btn-circle"><i class="fas fa-info"></i></a>
-        <a href="#" class="btn btn-sm btn-warning btn-circle"><i class="fas fa-edit"></i></a>
       </td>
     </tr>
   </tbody>

@@ -23,7 +23,7 @@
             <li class="nav-item">
                 <a class="nav-link" href="/siswa-admin">
                 <i class="fas fa-fw fa-user"></i>
-                    <span>Siswa</span></a>
+                    <span>Guru</span></a>
             </li>
 
             <li class="nav-item">
