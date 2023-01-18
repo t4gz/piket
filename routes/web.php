@@ -48,6 +48,10 @@ Route::middleware(['auth', 'role:siswa'])->group(function(){
     Route::get ('laporan', function () {
         return view ('siswa.laporan_siswa');
     });
+
+    Route::get ('info', function () {
+        return view ('siswa.info_siswa');
+    });
     
 
 });

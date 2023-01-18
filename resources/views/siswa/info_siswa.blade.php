@@ -23,7 +23,7 @@
   <!-- Navigation -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
   <div class="container" style="font-size: 20px ;">
-    <a class="navbar-brand" href="/siswa">
+    <a class="navbar-brand" href="#">
       <img src="../images/logo_smk.png" alt="Logo" height="60" > 
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -32,7 +32,13 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ms-auto">
         <li class="nav-item">
-          <a href="/siswa" class="nav-link">Home</a>
+          <a class="nav-link" href="/siswa">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="laporan">laporan</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">Absen</a>
         </li>
         <li class="nav-item">
           <a class="nav-link active" href="#">Logout</a>
@@ -47,36 +53,33 @@
 <br>
 
 <div class="container">
-  <h1 class="text-center">Laporan</h1>
+  <h1 class="text-center">Informasi</h1>
 </div>
 
 <br>
 <br>
 
-<div class="container">
-<form>
-  <div class="row mb-3">
-    <label for="namablmpiket" class="col-sm-2 col-form-label">Nama yang tidak piket</label>
-    <div class="col-sm-10">
-      <input type="text" class="form-control" id="namablmpiket">
-    </div>
+<div class="row" style="justify-content: center;">
+<div class="card col-md-4 mr-5" style="width: 300px;" >
+  <img src="./images/1.png" alt="1.png" class="card-img-top" >
+  <div class="card-body">
+    <h4 class="card-title">murid_placeHolder</h4>
+     <br>
+    <p class="card-text">Nama :</p>
+    <p class="card-text">NISN :</p>
   </div>
-  <div class="row mb-3">
-    <label for="Deskripsi" class="col-sm-2 col-form-label">Deskripsi</label>
-    <div class="col-sm-10">
-      <input type="text" class="form-control" id="Deskripsi">
-    </div>
-  </div>
-  <div class="row mb-3">
-  <label for="foto" class="col-sm-2 col-form-label">Upload Foto (opsional)</label>
-     <div class="col-sm-10">
-        <input type="file" class="form-control-file" id="foto" name="foto" value="">
-     </div>
-   </div>
-   <div class="text-center">
-   <button type="submit" class="btn btn-primary btn-sm" >Kirim</button>
-   </div>
-</form>
 </div>
+
+<div class="card col-md-4" style="width: 300px;" >
+  <div class="card-body">
+    <h4 class="card-title">murid_placeHolder</h4>
+     <br>
+    <p class="card-text">Tangal Piket    :</p>
+    <p class="card-text">Deskripsi piket :</p>
+    <p class="card-text">bukti piket     :</p>
+  </div>
+</div
+</div>
+
 </body>
 </html>
