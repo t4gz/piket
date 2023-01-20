@@ -23,7 +23,7 @@
   <!-- Navigation -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
   <div class="container" style="font-size: 20px ;">
-    <a class="navbar-brand" href="#">
+    <a class="navbar-brand" href="/siswa">
       <img src="../images/logo_smk.png" alt="Logo" height="60" > 
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -33,9 +33,6 @@
       <ul class="navbar-nav ms-auto">
         <li class="nav-item">
           <a class="nav-link" href="/siswa">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="laporan">laporan</a>
         </li>
         <li class="nav-item">
           <a class="nav-link active" href="#">Logout</a>
@@ -92,7 +89,7 @@
    </div>
 
    <div class="text-center">
-   <button type="submit" class="btn btn-primary" >Kirim</button>
+   <button type="submit" class="btn btn-primary btn-sm" >Kirim</button>
    </div>
 </form>
 </div>
