@@ -43,7 +43,7 @@
           <a class="nav-link" href="/laporan">Laporan</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/absen">Absen</a>
+          <a class="nav-link" href="{{route('absen.index')}}">Absen</a>
         </li>
 
         <div class="topbar-divider d-none d-sm-block"></div>

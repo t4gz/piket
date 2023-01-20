@@ -7,6 +7,7 @@ use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\DashboardSiswaController;
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\SiswaController;
+use App\Http\Controllers\AbsenController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -42,8 +43,7 @@ Route::middleware(['auth', 'role:siswa'])->group(function(){
     //dashboard siswa
     Route::resource('siswa', DashboardSiswaController::class);
 
-    Route::get ('absen', function() {
-        return view ('siswa.absen_siswa');});
+    Route::resource('absen', AbsenController::class);
     
     Route::get ('laporan', function () {
         return view ('siswa.laporan_siswa');
