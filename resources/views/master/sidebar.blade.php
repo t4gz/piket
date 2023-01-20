@@ -3,8 +3,8 @@
 
             <!-- Sidebar - Brand -->
             <a class="sidebar-brand d-flex align-items-center justify-content-center" href="/admin">
-                <div class="sidebar-brand-icon rotate-n-15">
-                    <i class="fas fa-laugh-wink"></i>
+                <div class="sidebar-brand-icon">
+                    <img src="../images/logo_smk.png" alt="" height="60px">
                 </div>
                 <div class="sidebar-brand-text mx-3">Piket RPL 2</div>
             </a>

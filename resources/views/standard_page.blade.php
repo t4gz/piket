@@ -60,14 +60,14 @@
 <br>
 
 <div class="container">
-  <h1 class="text-center">Jadwal piket</h1>
+  <h1 class="text-center ">Jadwal piket hari ini</h1>
 </div>
 
 <br>
 <br>
 
 <div class="container-md">
-<table class="table">
+<table class="table t">
   <thead>
     <tr>
       <th scope="col">No.</th>
