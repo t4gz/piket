@@ -57,19 +57,40 @@
 <br>
 
 <div class="container">
-<form>
+<form method="post" enctype="multipart/form-data" action="{{ route('absen.store') }}">
+
   <div class="row mb-3">
-    <label for="Deskripsi" class="col-sm-2 col-form-label">Deskripsi</label>
+    <label for="nama" class="col-sm-2 col-form-label">NAMA : </label>
     <div class="col-sm-10">
-      <input type="text" class="form-control" id="Deskripsi">
+      <!-- <input type="text" class="form-control" id="nama" name="nama" value="{{ old('nama') }}"> -->
+      <select class="form-select" id="nama" name="nama">
+        <option>Silahkan Pilih Siswa</option>
+        <option>Steven Alden</option>
+      </select>
     </div>
   </div>
+
+  <div class="row mb-3">
+    <label for="nisn" class="col-sm-2 col-form-label">NISN : </label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="nisn" name="nisn" value="{{ old('nisn') }}">
+    </div>
+  </div>
+
+  <div class="row mb-3">
+    <label for="deskripsi" class="col-sm-2 col-form-label">Deskripsi</label>
+    <div class="col-sm-10">
+      <input type="text" name="deskripsi" class="form-control">
+    </div>
+  </div>
+
   <div class="row mb-3">
   <label for="inputFile" class="col-sm-2 col-form-label">Upload Foto (bukti)</label>
      <div class="col-sm-10">
         <input type="file" class="form-control-file" id="foto" name="foto" value="">
      </div>
    </div>
+
    <div class="text-center">
    <button type="submit" class="btn btn-primary" >Kirim</button>
    </div>
