@@ -54,25 +54,30 @@
 <br>
 
 <div class="container">
-<form>
+<form action="{{route('laporan.store')}}" method="post" enctype="multipart/form-data">
+  @csrf
+  <input type="hidden" name="pelapor" value="{{auth()->user()->name}}">
+  <input type="hidden" name="nisn" value="{{auth()->user()->nisn}}">
   <div class="row mb-3">
-    <label for="namablmpiket" class="col-sm-2 col-form-label">Nama yang tidak piket</label>
+    <label for="nama" class="col-sm-2 col-form-label">Nama yang dilaporkan</label>
     <div class="col-sm-10">
-      <input type="text" class="form-control" id="namablmpiket">
+      <input type="text" name="nama" class="form-control">
     </div>
   </div>
   <div class="row mb-3">
-    <label for="Deskripsi" class="col-sm-2 col-form-label">Deskripsi</label>
+    <label for="deskripsi" class="col-sm-2 col-form-label">Deskripsi</label>
     <div class="col-sm-10">
-      <input type="text" class="form-control" id="Deskripsi">
+      <input type="text" name="deskripsi" class="form-control">
     </div>
   </div>
+
   <div class="row mb-3">
-  <label for="foto" class="col-sm-2 col-form-label">Upload Foto (opsional)</label>
+  <label for="inputFile" class="col-sm-2 col-form-label">Upload Foto (bukti)</label>
      <div class="col-sm-10">
         <input type="file" class="form-control-file" id="foto" name="foto" value="">
      </div>
    </div>
+
    <div class="text-center">
    <button type="submit" class="btn btn-primary btn-sm" >Kirim</button>
    </div>

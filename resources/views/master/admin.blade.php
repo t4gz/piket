@@ -23,6 +23,8 @@
 
                 <!-- Topbar -->
                 @include('master.topbar')
+                    
+                    
                 <!-- End of Topbar -->
 
                 <!-- Begin Page Content -->

@@ -9,14 +9,16 @@ class laporan extends Model
 {
     use HasFactory;
         protected $fillable = [
-            'komentar',
-            'bukti',
-            'absen_siswa'
+            'pelapor',
+            'nisn',
+            'nama',
+            'deskripsi',
+            'foto',
         ];
         
         protected $table = 'laporan';
 
-        public function siswa (){
-            return$this->belongsTo('App\Models\siswa', 'absen');
-        }
+        // public function siswa (){
+        //     return$this->belongsTo('App\Models\siswa', 'absen');
+        // }
 }

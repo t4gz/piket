@@ -3,10 +3,10 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\Absen;
+use App\Models\laporan;
 use Auth;
 
-class AbsenController extends Controller
+class LaporanController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,7 +15,7 @@ class AbsenController extends Controller
      */
     public function index()
     {
-        return view('siswa.absen_siswa');
+        return view('siswa.laporan_siswa');
     }
 
     /**
@@ -37,6 +37,7 @@ class AbsenController extends Controller
     public function store(Request $request)
     {
         $validasi = $request->validate([
+            'nama' => 'required',
             'deskripsi' => 'required',
             'foto' => 'required',
         ]);
@@ -49,13 +50,14 @@ class AbsenController extends Controller
         $tujuan_upload= './Template/img';
         $file->move($tujuan_upload,$nama_file);
 
-        Absen::create([
-            'nama' => auth()->user()->name,
+        laporan::create([
+            'pelapor' => auth()->user()->name,
             'nisn'=> auth()->user()->nisn,
+            'nama'=>$request-> nama,
             'deskripsi'=>$request-> deskripsi,
             'foto'=> $nama_file,
         ]);
-        return redirect('/absen');
+        return redirect('/laporan');
     }
 
     /**

@@ -8,6 +8,7 @@ use App\Http\Controllers\DashboardSiswaController;
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\SiswaController;
 use App\Http\Controllers\AbsenController;
+use App\Http\Controllers\LaporanController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -19,42 +20,47 @@ use App\Http\Controllers\AbsenController;
 |
 */
 
-Route::middleware('guest')->group(function(){
+Route::middleware('guest')->group(function () {
     Route::get('login', [LoginController::class, 'index'])->name('login');
     Route::post('login', [LoginController::class, 'authenticate']);
     Route::resource('register', RegisterController::class);
-    Route::get('/', function () {
-        return view('standard_page');});
+    Route::get(
+        '/',
+        function () {
+            return view('standard_page');
+        }
+    );
 });
 
 
-Route::middleware(['auth', 'role:admin'])->group(function(){
+Route::middleware(['auth', 'role:admin'])->group(function () {
     //dashboard
     Route::resource('admin', DashboardController::class);
 
     Route::get('laporan-admin', function () {
-        return view('admin.laporan_admin');});
-    
+        return view('admin.laporan_admin');
+    });
+
+    Route::get('editlaporan', function () {
+        return view('admin.edit_laporan');
+    });
+
 
     Route::resource('siswa-admin', SiswaController::class);
 });
 
-Route::middleware(['auth', 'role:siswa'])->group(function(){
+Route::middleware(['auth', 'role:siswa'])->group(function () {
     //dashboard siswa
     Route::resource('siswa', DashboardSiswaController::class);
 
     Route::resource('absen', AbsenController::class);
-    
-    Route::get ('laporan', function () {
-        return view ('siswa.laporan_siswa');
-    });
 
-    Route::get ('info', function () {
-        return view ('siswa.info_siswa');
-    });
-    
+    Route::resource('laporan', LaporanController::class);
 
+    Route::get('info', function () {
+        return view('siswa.info_siswa');
+    });
 });
 
 //logout
-    Route::post('logout', [LoginController::class, 'logout'])->middleware('auth');
+Route::post('logout', [LoginController::class, 'logout'])->middleware('auth');

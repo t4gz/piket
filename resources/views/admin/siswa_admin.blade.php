@@ -22,9 +22,7 @@
                     <tr>
                       <th scope="col" >No.</th>
                       <th scope="col">Nama</th>
-                      <th scope="col">NISN</th>
-                      <th scope="col">Alamat</th>
-                      <th scope="col">Jenis Kelamin</th>
+                      <th scope="col">Kelas</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -32,9 +30,7 @@
                     <tr>
                     <th scope="row">{{++$i}}</th>
                     <td>{{ $item -> nama }}</td>
-                    <td>{{ $item -> nisn }}</td>
-                    <td>{{ $item -> alamat }}</td>
-                    <td>{{ $item -> jk }}</td>
+                    <td>{{ $item -> kelas }}</td>
                     </tr>
                     @endforeach
                     

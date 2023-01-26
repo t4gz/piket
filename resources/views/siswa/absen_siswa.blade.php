@@ -34,9 +34,24 @@
         <li class="nav-item">
           <a class="nav-link" href="/siswa">Home</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link active" href="#">Logout</a>
+        <div class="topbar-divider d-none d-sm-block"></div>
+        @auth
+        <li class="nav-item dropdown no-arrow">
+            <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="mr-2 d-none d-lg-inline text-white-600 small">{{auth()->user()->name}}</span>
+                <img class="img-profile rounded-circle"
+                    src="{{ asset('template/img/undraw_profile.svg') }}">
+            </a>
+            <!-- Dropdown - User Information -->
+            <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"aria-labelledby="userDropdown">
+                <!-- <div class="dropdown-divider"></div> -->
+                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal"><i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+                    Logout
+                </a>
+            </div>
         </li>
+        @endauth
       </ul>
     </div>
   </div>
@@ -55,25 +70,9 @@
 
 <div class="container">
 <form method="post" enctype="multipart/form-data" action="{{ route('absen.store') }}">
-
-  <div class="row mb-3">
-    <label for="nama" class="col-sm-2 col-form-label">NAMA : </label>
-    <div class="col-sm-10">
-      <!-- <input type="text" class="form-control" id="nama" name="nama" value="{{ old('nama') }}"> -->
-      <select class="form-select" id="nama" name="nama">
-        <option>Silahkan Pilih Siswa</option>
-        <option>Steven Alden</option>
-      </select>
-    </div>
-  </div>
-
-  <div class="row mb-3">
-    <label for="nisn" class="col-sm-2 col-form-label">NISN : </label>
-    <div class="col-sm-10">
-      <input type="text" class="form-control" id="nisn" name="nisn" value="{{ old('nisn') }}">
-    </div>
-  </div>
-
+  @csrf
+  <input type="hidden" name="nama" value="{{auth()->user()->name}}">
+  <input type="hidden" name="nisn" value="{{auth()->user()->nisn}}">
   <div class="row mb-3">
     <label for="deskripsi" class="col-sm-2 col-form-label">Deskripsi</label>
     <div class="col-sm-10">

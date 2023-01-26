@@ -15,6 +15,11 @@ return new class extends Migration
     {
         Schema::create('laporan', function (Blueprint $table) {
             $table->id();
+            $table->string('pelapor');
+            $table->string('nisn');
+            $table->string('nama');
+            $table->string('deskripsi');
+            $table->string('foto');
             $table->timestamps();
         });
     }

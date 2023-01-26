@@ -48,7 +48,7 @@
                         <td>Sudah Melaksanakan piket</td>
                         <td>
                             <a href="#" class="btn btn-sm btn-info"><i class="fas fa-info"></i></a>
-                            <a href="#" class="btn btn-sm btn-warning"><i class="fas fa-edit"></i></a>
+                            <a href="/editlaporan" class="btn btn-sm btn-warning"><i class="fas fa-edit"></i></a>
                         </td>
                         </tr>
                     </tbody>

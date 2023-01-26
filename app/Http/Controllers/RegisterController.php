@@ -44,6 +44,7 @@ class RegisterController extends Controller
         $this->validate($request, [
 
             'name' => 'required|min:7|max:30',
+            'nisn' => 'required',
             'email' => 'required',
             'password' => 'required',
         ], $message);
@@ -51,6 +52,7 @@ class RegisterController extends Controller
         //insert data
         User::create([
             'name' => $request-> name,
+            'nisn'=>$request-> nisn,
             'email' => $request-> email,
             'role' => 'siswa',
             'password' => bcrypt($request-> password),
