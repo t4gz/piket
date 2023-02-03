@@ -24,10 +24,10 @@
 
 <body class="bg-dark">
 
-    <div class="container">
+    <div class="container mt-5">
 
         <!-- Outer Row -->
-        <div class="row justify-content-center">
+        <div class="row justify-content-center mt-5 py-5">
 
             <div class="col-xl-10 col-lg-12 col-md-9">
 

@@ -27,6 +27,12 @@
             </li>
 
             <li class="nav-item">
+                <a class="nav-link" href="/absen-admin">
+                <i class="fas fa-fw fa-user"></i>
+                    <span>Absen</span></a>
+            </li>
+
+            <li class="nav-item">
                 <a class="nav-link" href="/laporan-admin">
                     <i class="fas fa-fw fa-book"></i>
                     <span>Laporan</span></a>

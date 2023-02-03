@@ -8,6 +8,8 @@ use App\Http\Controllers\DashboardSiswaController;
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\SiswaController;
 use App\Http\Controllers\AbsenController;
+use App\Http\Controllers\AdminLaporanController;
+use App\Http\Controllers\AdminAbsenController;
 use App\Http\Controllers\LaporanController;
 /*
 |--------------------------------------------------------------------------
@@ -37,9 +39,8 @@ Route::middleware(['auth', 'role:admin'])->group(function () {
     //dashboard
     Route::resource('admin', DashboardController::class);
 
-    Route::get('laporan-admin', function () {
-        return view('admin.laporan_admin');
-    });
+    Route::resource('laporan-admin', AdminLaporanController::class);
+    Route::resource('absen-admin', AdminAbsenController::class);
 
     Route::get('editlaporan', function () {
         return view('admin.edit_laporan');

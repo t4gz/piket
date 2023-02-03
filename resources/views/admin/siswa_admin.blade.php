@@ -1,6 +1,6 @@
 @extends('master.admin')
-@section('title', 'Data Guru')
-@section('content-title', 'Guru')
+@section('title', 'Data')
+@section('content-title', 'Siswa & Guru')
 @section('content')
 
 @if($message = Session::get('success'))
