@@ -1,14 +1,13 @@
-@foreach($absen as $item)
+
     <div class="card ">
         <div class="card-header">
-            <strong> {{ $item->nama}}</strong>
+            <strong> {{ $absen->nama}}</strong>
         </div>
         <div class="card-body">
             <strong>Deskripsi</strong>
-            <p>{{ $item->deskripsi }}</p>
+            <p>{{ $absen->deskripsi }}</p>
             <strong>Foto</strong><br>
-            <img src="{{ asset('/Template/img/'.$item->foto) }}" width="130" class="mt-3 mx-auto img-thumbail">
+            <img src="{{ asset('/Template/img/'.$absen->foto) }}" width="130" class="mt-3 mx-auto img-thumbail">
         </div>
     </div>
     <br>
-    @endforeach

@@ -16,7 +16,7 @@ class LoginController extends Controller
     public function authenticate(Request $request)
     {
         $data=$request->validate([
-            'email' => ['required', 'email'],
+            'nisn' => ['required'],
             'password' => ['required']
         ]);
 
@@ -33,7 +33,7 @@ class LoginController extends Controller
         }
 
         return back()->withErrors([
-            'email' => 'Email atau Password Salah!!',
+            'nisn' => 'NISN atau Password Salah!!',
         ]);
     }
 

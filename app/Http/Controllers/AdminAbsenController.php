@@ -14,7 +14,7 @@ class AdminAbsenController extends Controller
      */
     public function index()
     {
-        $data = Absen::all();
+        $data = Absen::orderBy('created_at','desc')->get();     
         return view('admin.absen_admin', compact('data'));
     }
 
@@ -47,7 +47,7 @@ class AdminAbsenController extends Controller
      */
     public function show($id)
     {
-        $absen=Absen::find($id)->get();
+        $absen=Absen::find($id);
         return view('admin.show_absen_admin', compact('absen'));
     }
 

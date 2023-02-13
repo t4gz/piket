@@ -1,3 +1,4 @@
+@extends('master.script')
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -21,41 +22,55 @@
 </head>
 <body>
   <!-- Navigation -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
-  <div class="container" style="font-size: 20px ;">
-    <a class="navbar-brand" href="/siswa">
-      <img src="../images/logo_smk.png" alt="Logo" height="60" > 
-    </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="/siswa">Home</a>
-        </li>
-        <div class="topbar-divider d-none d-sm-block"></div>
-        @auth
-        <li class="nav-item dropdown no-arrow">
-            <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
-                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <span class="mr-2 d-none d-lg-inline text-white-600 small">{{auth()->user()->name}}</span>
-                <img class="img-profile rounded-circle"
-                    src="{{ asset('template/img/undraw_profile.svg') }}">
+  <nav class="navbar navbar-expand navbar-light bg-dark topbar mb-4 static-top shadow">
+    <div class="container" style="font-size: 20px ;">
+      <a class="navbar-brand" href="#">
+        <img src="../images/logo_smk.png" alt="Logo" height="60" > 
+      </a>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/siswa">Home</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="/laporan">Laporan</a>
+          </li>
+  
+          <div class="topbar-divider d-none d-sm-block"></div>
+          @auth
+          <li class="nav-item dropdown no-arrow">
+              <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <span class="mr-2 d-none d-lg-inline text-white-600 small">{{auth()->user()->name}}</span>
+                  <img class="img-profile rounded-circle"
+                      src="{{ asset('template/img/undraw_profile.svg') }}">
+              </a>
+              <!-- Dropdown - User Information -->
+              <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"aria-labelledby="userDropdown">
+                  <!-- <div class="dropdown-divider"></div> -->
+                  <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal"><i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+                      Logout
+                  </a>
+              </div>
+          </li>
+          @endauth        <!-- <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown
             </a>
-            <!-- Dropdown - User Information -->
-            <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"aria-labelledby="userDropdown">
-                <!-- <div class="dropdown-divider"></div> -->
-                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal"><i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
-                    Logout
-                </a>
-            </div>
-        </li>
-        @endauth
-      </ul>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li> -->
+        </ul>
+      </div>
     </div>
-  </div>
-</nav>
+  </nav>
 
 <!-- Page Content -->
 <br>
@@ -74,7 +89,7 @@
   <input type="hidden" name="nama" value="{{auth()->user()->name}}">
   <input type="hidden" name="nisn" value="{{auth()->user()->nisn}}">
   <div class="row mb-3">
-    <label for="deskripsi" class="col-sm-2 col-form-label">Deskripsi</label>
+    <label for="deskripsi" class="col-sm-2 col-form-label" required >Deskripsi</label>
     <div class="col-sm-10">
       <input type="text" name="deskripsi" class="form-control">
     </div>

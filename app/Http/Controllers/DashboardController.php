@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\User;
+use App\Models\laporan;
 
 class DashboardController extends Controller
 {
@@ -13,7 +15,9 @@ class DashboardController extends Controller
      */
     public function index()
     {
-        return view('admin.dashboard_admin');
+        $siswa = User::all()->where('role', '==', 'siswa');
+        $laporan = laporan::all();
+        return view('admin.dashboard_admin', compact('siswa', 'laporan'));
     }
 
     /**

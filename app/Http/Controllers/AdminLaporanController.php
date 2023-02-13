@@ -14,7 +14,7 @@ class AdminLaporanController extends Controller
      */
     public function index()
     {
-        $data = laporan::all();
+        $data = laporan::orderBy('created_at','desc')->get();  
         return view('admin.laporan_admin', compact('data'));
     }
 
@@ -47,7 +47,7 @@ class AdminLaporanController extends Controller
      */
     public function show($id)
     {
-        $laporan=laporan::find($id)->get();
+        $laporan=laporan::find($id);
         return view('admin.show_laporan_admin', compact('laporan'));
     }
 

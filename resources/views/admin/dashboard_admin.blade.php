@@ -10,7 +10,7 @@
                 <div class="row no-gutters align-items-center">
                     <div class="col mr-2">
                         <div class="text-xs font-weight-bold text-dark text-uppercase mb-1">Jumlah Siswa</div>
-                        <div class="h5 mb-0 font-weight-bold text-gray-800">3</div>
+                        <div class="h5 mb-0 font-weight-bold text-gray-800">{{$siswa->count()}}</div>
                     </div>
                     <div class="col-auto">
                         <i class="fas fa-user fa-2x text-gray-300"></i>
@@ -26,7 +26,7 @@
                 <div class="row no-gutters align-items-center">
                     <div class="col mr-2">
                         <div class="text-xs font-weight-bold text-dark text-uppercase mb-1">Jumlah Laporan</div>
-                        <div class="h5 mb-0 font-weight-bold text-gray-800">1</div>
+                        <div class="h5 mb-0 font-weight-bold text-gray-800">{{$laporan->count()}}</div>
                     </div>
                     <div class="col-auto">
                         <i class="fas fa-fw fa-book fa-2x text-gray-300"></i>

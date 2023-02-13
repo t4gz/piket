@@ -58,9 +58,9 @@
                                     <form action="login" method="post" class="user">
                                         @csrf
                                         <div class="form-group">
-                                            <input type="email" class="form-control form-control-user"
-                                                id="exampleInputEmail" aria-describedby="emailHelp" name="email"
-                                                placeholder="Enter Email Address...">
+                                            <input type="input" class="form-control form-control-user"
+                                                id="nisn" name="nisn"
+                                                placeholder="Masukkan NISN Siswa...">
                                         </div>
                                         <div class="form-group">
                                             <input type="password" class="form-control form-control-user"
