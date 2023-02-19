@@ -60,6 +60,9 @@
                                         name="nisn" placeholder="nisn">
                                 </div>
                                 <div class="form-group">
+                                    <input type="hidden" name="kelas" value="RPL">
+                                </div>
+                                <div class="form-group">
                                     <input type="email" class="form-control form-control-user" id="email"
                                         name="email" placeholder="Email Address">
                                 </div>

@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use Session;
+use Illuminate\Support\Facades\Session;
 use App\Models\User;
 
 class RegisterController extends Controller
@@ -45,6 +45,7 @@ class RegisterController extends Controller
 
             'name' => 'required|min:7|max:30',
             'nisn' => 'required',
+            'kelas' => 'required',
             'email' => 'required',
             'password' => 'required',
         ], $message);
@@ -53,6 +54,7 @@ class RegisterController extends Controller
         User::create([
             'name' => $request-> name,
             'nisn'=>$request-> nisn,
+            'kelas'=>$request-> kelas,
             'email' => $request-> email,
             'role' => 'siswa',
             'password' => bcrypt($request-> password),

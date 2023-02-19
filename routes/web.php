@@ -39,7 +39,12 @@ Route::middleware(['auth', 'role:admin'])->group(function () {
     //dashboard
     Route::resource('admin', DashboardController::class);
 
+    //laporan
+    Route::get('laporan-admin/hapus', [AdminLaporanController::class, 'hapus'])->name('laporan-admin.hapus');
     Route::resource('laporan-admin', AdminLaporanController::class);
+
+    //absen
+    Route::get('absen-admin/hapus', [AdminAbsenController::class, 'hapus'])->name('absen-admin.hapus');
     Route::resource('absen-admin', AdminAbsenController::class);
 
     Route::get('editlaporan', function () {

@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Absen;
+use Session;
 
 class AdminAbsenController extends Controller
 {
@@ -83,5 +84,12 @@ class AdminAbsenController extends Controller
     public function destroy($id)
     {
         //
+    }
+
+    public function hapus()
+    {
+        Absen::truncate();
+        Session::flash('hapus', "Berhasil Menghapus !!");
+        return redirect('/absen-admin');
     }
 }

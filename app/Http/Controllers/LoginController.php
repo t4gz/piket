@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Session;
-use Auth;
+use Illuminate\Support\Facades\Auth;
 
 class LoginController extends Controller
 {
@@ -16,8 +16,8 @@ class LoginController extends Controller
     public function authenticate(Request $request)
     {
         $data=$request->validate([
-            'nisn' => ['required'],
-            'password' => ['required']
+            'email' => ['required'],
+            'password' => ['required'],
         ]);
 
         if (Auth::attempt($data)) {
@@ -32,10 +32,17 @@ class LoginController extends Controller
             }
         }
 
+        // else {
+        //     return $data;
+        // }
+
         return back()->withErrors([
-            'nisn' => 'NISN atau Password Salah!!',
+            'email' => 'Email Salah!!',
+            'password' => 'Password Salah!!',
         ]);
     }
+
+    
 
     public function logout(Request $request)
     {

@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Absen;
 use Auth;
+use Session;
 
 class AbsenController extends Controller
 {
@@ -55,6 +56,7 @@ class AbsenController extends Controller
             'deskripsi'=>$request-> deskripsi,
             'foto'=> $nama_file,
         ]);
+        Session::flash('message', "Selamat, Anda berhasil Absen !!");
         return redirect('/absen');
     }
 

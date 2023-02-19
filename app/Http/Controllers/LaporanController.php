@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\laporan;
 use Auth;
+use Session;
 
 class LaporanController extends Controller
 {
@@ -57,6 +58,7 @@ class LaporanController extends Controller
             'deskripsi'=>$request-> deskripsi,
             'foto'=> $nama_file,
         ]);
+        Session::flash('message', "Selamat, Anda berhasil Lapor");
         return redirect('/laporan');
     }
 
