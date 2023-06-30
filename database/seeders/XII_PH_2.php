@@ -18,7 +18,7 @@ class XII_PH_2 extends Seeder
         $kelas = [
             [
                 'nisn' => 123123123,
-                'nama' => 'maulana zidan',
+                'nama' => 'Maulana Zidan E. S.',
                 'kelas_id' => 4,
                 'users_id' => null,
                 'alamat' => 'jalan-jalan',
@@ -26,7 +26,7 @@ class XII_PH_2 extends Seeder
             ],
             [
                 'nisn' => 123123123,
-                'nama' => 'vicky ambarwati',
+                'nama' => 'Vicky Ambarwati',
                 'kelas_id' => 4,
                 'users_id' => null,
                 'alamat' => 'jalan-jalan',
@@ -34,7 +34,7 @@ class XII_PH_2 extends Seeder
             ],
             [
                 'nisn' => 123123123,
-                'nama' => 'nathania',
+                'nama' => 'Nathania',
                 'kelas_id' => 4,
                 'users_id' => null,
                 'alamat' => 'jalan-jalan',
@@ -42,7 +42,7 @@ class XII_PH_2 extends Seeder
             ],
             [
                 'nisn' => 123123123,
-                'nama' => 'maulana zidan',
+                'nama' => 'Nabilah Fauziyah N',
                 'kelas_id' => 4,
                 'users_id' => null,
                 'alamat' => 'jalan-jalan',
@@ -50,7 +50,7 @@ class XII_PH_2 extends Seeder
             ],
             [
                 'nisn' => 123123123,
-                'nama' => 'natasha aurellya',
+                'nama' => 'Natasha Aurellya Sisya. A',
                 'kelas_id' => 4,
                 'users_id' => null,
                 'alamat' => 'jalan-jalan',
@@ -58,7 +58,7 @@ class XII_PH_2 extends Seeder
             ],
             [
                 'nisn' => 123123123,
-                'nama' => 'mohammad ferdy',
+                'nama' => 'Mohammad Ferdy F.',
                 'kelas_id' => 4,
                 'users_id' => null,
                 'alamat' => 'jalan-jalan',

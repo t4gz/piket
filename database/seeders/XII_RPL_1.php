@@ -18,7 +18,7 @@ class XII_RPL_1 extends Seeder
         $kelas = [
             [
                 'nisn' => 123123123,
-                'nama' => 'bilqist alma',
+                'nama' => 'Diva Egalyta Putri',
                 'kelas_id' => 1,
                 'users_id' => null,
                 'alamat' => 'jalan-jalan',
@@ -26,7 +26,7 @@ class XII_RPL_1 extends Seeder
             ],
             [
                 'nisn' => 123123123,
-                'nama' => 'adinda jati',
+                'nama' => 'Adinda Jati Mulia',
                 'kelas_id' => 1,
                 'users_id' => null,
                 'alamat' => 'jalan-jalan',
@@ -34,7 +34,7 @@ class XII_RPL_1 extends Seeder
             ],
             [
                 'nisn' => 123123123,
-                'nama' => 'alan nadia',
+                'nama' => 'Alan Nadia Bella S',
                 'kelas_id' => 1,
                 'users_id' => null,
                 'alamat' => 'jalan-jalan',
@@ -42,7 +42,7 @@ class XII_RPL_1 extends Seeder
             ],
             [
                 'nisn' => 123123123,
-                'nama' => 'hendra gani',
+                'nama' => 'Hendra Gani Fatihul F',
                 'kelas_id' => 1,
                 'users_id' => null,
                 'alamat' => 'jalan-jalan',
@@ -50,7 +50,7 @@ class XII_RPL_1 extends Seeder
             ],
             [
                 'nisn' => 123123123,
-                'nama' => 'hafidz ridwan',
+                'nama' => 'Hafidz Ridwan Cahya',
                 'kelas_id' => 1,
                 'users_id' => null,
                 'alamat' => 'jalan-jalan',
@@ -58,7 +58,7 @@ class XII_RPL_1 extends Seeder
             ],
             [
                 'nisn' => 123123123,
-                'nama' => 'abyaz prince',
+                'nama' => 'Christiano Juan Rafael',
                 'kelas_id' => 1,
                 'users_id' => null,
                 'alamat' => 'jalan-jalan',

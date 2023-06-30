@@ -18,7 +18,7 @@ class XII_RPL_2 extends Seeder
         $kelas = [
             [
                 'nisn' => 123123123,
-                'nama' => 'inna filjannati',
+                'nama' => 'Inna Filjannati Aprilina',
                 'kelas_id' => 2,
                 'users_id' => null,
                 'alamat' => 'jalan-jalan',
@@ -26,7 +26,7 @@ class XII_RPL_2 extends Seeder
             ],
             [
                 'nisn' => 123123123,
-                'nama' => 'ilham bintang',
+                'nama' => 'Ilham Bintang Herlambang',
                 'kelas_id' => 2,
                 'users_id' => null,
                 'alamat' => 'jalan-jalan',
@@ -34,7 +34,7 @@ class XII_RPL_2 extends Seeder
             ],
             [
                 'nisn' => 123123123,
-                'nama' => 'steven alden',
+                'nama' => 'Steven Alden Airlangga Cahya Ksatria Maulana Malik Ibrahim',
                 'kelas_id' => 2,
                 'users_id' => null,
                 'alamat' => 'jalan-jalan',
@@ -42,7 +42,7 @@ class XII_RPL_2 extends Seeder
             ],
             [
                 'nisn' => 123123123,
-                'nama' => 'alip adiawan',
+                'nama' => 'M. Alif Adiawan',
                 'kelas_id' => 2,
                 'users_id' => null,
                 'alamat' => 'jalan-jalan',
@@ -50,7 +50,7 @@ class XII_RPL_2 extends Seeder
             ],
             [
                 'nisn' => 123123123,
-                'nama' => 'rafli dwi',
+                'nama' => 'Rafli Dwi Ferdiansyah',
                 'kelas_id' => 2,
                 'users_id' => null,
                 'alamat' => 'jalan-jalan',
@@ -58,7 +58,7 @@ class XII_RPL_2 extends Seeder
             ],
             [
                 'nisn' => 123123123,
-                'nama' => 'mochammad dwi',
+                'nama' => 'Mochammad Dwi Febriansyah',
                 'kelas_id' => 2,
                 'users_id' => null,
                 'alamat' => 'jalan-jalan',

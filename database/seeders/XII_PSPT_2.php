@@ -6,7 +6,7 @@ use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use App\Models\siswa;
 
-class XII_BDP_1 extends Seeder
+class XII_PSPT_2 extends Seeder
 {
     /**
      * Run the database seeds.
@@ -18,51 +18,51 @@ class XII_BDP_1 extends Seeder
         $kelas = [
             [
                 'nisn' => 123123123,
-                'nama' => 'Aqueena Regita Hapsari',
-                'kelas_id' => 5,
+                'nama' => 'Nayaka Dinda Amartya',
+                'kelas_id' => 8,
                 'users_id' => null,
                 'alamat' => 'jalan-jalan',
                 'jenis_kelamin' => 'perempuan',
             ],
             [
                 'nisn' => 123123123,
-                'nama' => 'Ainur Rohmah',
-                'kelas_id' => 5,
+                'nama' => 'Tasya Kolilasari',
+                'kelas_id' => 8,
                 'users_id' => null,
                 'alamat' => 'jalan-jalan',
                 'jenis_kelamin' => 'perempuan',
             ],
             [
                 'nisn' => 123123123,
-                'nama' => 'Zerlina Farica Zaneta B',
-                'kelas_id' => 5,
+                'nama' => 'Pinky Avisa Ratri',
+                'kelas_id' => 8,
                 'users_id' => null,
                 'alamat' => 'jalan-jalan',
                 'jenis_kelamin' => 'perempuan',
             ],
             [
                 'nisn' => 123123123,
-                'nama' => 'Deastika Pramesti',
-                'kelas_id' => 5,
+                'nama' => 'Zakiyah Afwafina Hidayah',
+                'kelas_id' => 8,
                 'users_id' => null,
                 'alamat' => 'jalan-jalan',
                 'jenis_kelamin' => 'perempuan',
             ],
             [
                 'nisn' => 123123123,
-                'nama' => 'Diva Annastasya',
-                'kelas_id' => 5,
+                'nama' => 'Nike Indah Safitri',
+                'kelas_id' => 8,
                 'users_id' => null,
                 'alamat' => 'jalan-jalan',
                 'jenis_kelamin' => 'perempuan',
             ],
             [
                 'nisn' => 123123123,
-                'nama' => 'M. Fudi',
-                'kelas_id' => 5,
+                'nama' => 'Olivia Marsha Sentosa',
+                'kelas_id' => 8,
                 'users_id' => null,
                 'alamat' => 'jalan-jalan',
-                'jenis_kelamin' => 'laki - laki',
+                'jenis_kelamin' => 'perempuan',
             ],
         ];
 

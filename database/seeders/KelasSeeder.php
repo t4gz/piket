@@ -35,10 +35,10 @@ class KelasSeeder extends Seeder
                 'nama_kelas' => 'XII BDP 2'
             ],
             [
-                'nama_kelas' => 'XII TKJ 1'
+                'nama_kelas' => 'XII PSPT 1'
             ],
             [
-                'nama_kelas' => 'XII TKJ 2'
+                'nama_kelas' => 'XII PSPT 2'
             ],
         ];
 

@@ -18,7 +18,7 @@ class XII_PH_1 extends Seeder
         $kelas = [
             [
                 'nisn' => 123123123,
-                'nama' => 'lili',
+                'nama' => 'Lili',
                 'kelas_id' => 3,
                 'users_id' => null,
                 'alamat' => 'jalan-jalan',
@@ -26,7 +26,7 @@ class XII_PH_1 extends Seeder
             ],
             [
                 'nisn' => 123123123,
-                'nama' => 'andara ruri',
+                'nama' => 'Andara Ruri F',
                 'kelas_id' => 3,
                 'users_id' => null,
                 'alamat' => 'jalan-jalan',
@@ -34,7 +34,7 @@ class XII_PH_1 extends Seeder
             ],
             [
                 'nisn' => 123123123,
-                'nama' => 'theresia queen',
+                'nama' => 'Theresia Queen Ericke',
                 'kelas_id' => 3,
                 'users_id' => null,
                 'alamat' => 'jalan-jalan',
@@ -42,7 +42,7 @@ class XII_PH_1 extends Seeder
             ],
             [
                 'nisn' => 123123123,
-                'nama' => 'aulia anggy',
+                'nama' => 'Aulia Anggy',
                 'kelas_id' => 3,
                 'users_id' => null,
                 'alamat' => 'jalan-jalan',
@@ -50,7 +50,7 @@ class XII_PH_1 extends Seeder
             ],
             [
                 'nisn' => 123123123,
-                'nama' => 'hana alfiyanti',
+                'nama' => 'Shella Sapphira T. T.',
                 'kelas_id' => 3,
                 'users_id' => null,
                 'alamat' => 'jalan-jalan',
@@ -58,7 +58,7 @@ class XII_PH_1 extends Seeder
             ],
             [
                 'nisn' => 123123123,
-                'nama' => 'andda krisna',
+                'nama' => 'Angga Krisna Yudha',
                 'kelas_id' => 3,
                 'users_id' => null,
                 'alamat' => 'jalan-jalan',

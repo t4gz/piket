@@ -21,6 +21,8 @@ class SiswaSeeder extends Seeder
             XII_PH_2::class,
             XII_BDP_1::class,
             XII_BDP_2::class,
+            XII_PSPT_1::class,
+            XII_PSPT_2::class,
         ]); 
     }
 }
