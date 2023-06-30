@@ -13,9 +13,11 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('jadwal', function (Blueprint $table) {
+        Schema::create('absens', function (Blueprint $table) {
             $table->id();
-            $table->string('hari');
+            $table->string('deskripsi');
+            $table->string('status');
+            $table->foreignId('siswas_id')->constrained('siswas')->cascadeOnDelete()->cascadeOnUpdate();
             $table->timestamps();
         });
     }
@@ -27,6 +29,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('jadwal');
+        Schema::dropIfExists('absens');
     }
 };
