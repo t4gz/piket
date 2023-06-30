@@ -14,14 +14,13 @@ class SiswaSeeder extends Seeder
      */
     public function run()
     {
-        $siswa =[
-            // [
-            //     'name' =>'',
-            //     'nisn' =>'',
-            //     'kelas' =>'',
-            //     'email' =>'',
-            //     'password' =>'',
-            // ],
-        ];
+        $this->call([
+            XII_RPL_1::class,
+            XII_RPL_2::class,
+            XII_PH_1::class,
+            XII_PH_2::class,
+            XII_BDP_1::class,
+            XII_BDP_2::class,
+        ]); 
     }
 }
