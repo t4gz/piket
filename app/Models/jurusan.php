@@ -11,11 +11,12 @@ class jurusan extends Model
 
     public function nama_kelas()
     {
+        // return $this->hasManyThrough(nama_kelas::class, kelas::class);
         return $this->hasMany(nama_kelas::class);
     }
 
-    public function siswa()
-    {
-        return $this->hasManyThrough(nama_kelas::class,siswa::class);
-    }
+    // public function siswa()
+    // {
+    //     return $this->hasManyThrough(nama_kelas::class,siswa::class);
+    // }
 }

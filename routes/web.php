@@ -35,30 +35,35 @@ Route::middleware('guest')->group(function () {
     Route::get(
         '/',
         function () {
-            $kelas = nama_kelas::with('siswa')->get();
+            $kelas = nama_kelas::with('jurusan')->withCount('siswa')->get();
+            $jurusan = jurusan::all();
+            $spj = [];
+            $currentJurusan = null;
+            $siswaCount = 0;
+
             foreach ($kelas as $k) {
-                $jumlah[$k->id] = $k->siswa;
-            }
+                if ($currentJurusan !== $k->jurusan_id) {
+                    if (!is_null($currentJurusan)) {
+                        // Menyimpan total siswa per jurusan sebelumnya
+                        $spj[$currentJurusan] = $siswaCount;
+                    }
 
-
-            // $jurusan = jurusan::with('nama_kelas.siswa')->get();
-            $jurusan = jurusan::with('nama_kelas.siswa')->get();
-            foreach ($jurusan as $jur) {
-                foreach ($jur->nama_kelas as $k) {
-                    $a[] = $k->siswa;
+                    $currentJurusan = $k->jurusan_id;
+                    $siswaCount = 0;
                 }
+
+                $siswaCount += $k->siswa_count;
+                $a[] = $k;
             }
 
-            $kelas = nama_kelas::withCount('jurusan', 'siswa')->get();
-            $jurusan = jurusan::withCount('nama_kelas.siswa')->get();
-            foreach ($kelas as $k) {
-                $a = $k->nama_kelas->sum('siswa_count');
-            }
-            return $a;
-            // $kas = 
+            // Menyimpan total siswa untuk jurusan terakhir
+            if (!is_null($currentJurusan)) {
+                $spj[$currentJurusan] = $siswaCount;
+            } 
+            // return $spj;
             $absened = Absen::where('created_at', today())->get();
             $absent = siswa::all()->count();
-            return view('standard_page', compact('jumlah', 'absened', 'absent'));
+            return view('standard_page', compact('jurusan','spj', 'absened', 'absent'));
         }
     );
 });

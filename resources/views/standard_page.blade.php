@@ -63,29 +63,13 @@
     <div>
         <div class="table-responsive">
             <table class="table table-primary">
-                @foreach ($jumlah as $kelas => $siswa)
-                    <thead>
-                        <tr>
-                            <th scope="col">
-                                {{ $kelas }}
-                            </th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr class="">
-                            @foreach ($siswa as $s)
-                                <td>
-                                    {{ $s->first()->nama_kelas->siswa->count() }}
-                                </td>
-                            @endforeach
-                        </tr>
-                    </tbody>
+                @foreach ($spj as $j)
                 @endforeach
             </table>
         </div>
 
-        {{-- <canvas id=jumlah_siswa></canvas> --}}
-        {{-- <canvas id=jumlah_absen></canvas> --}}
+        <canvas id=jumlah_siswa></canvas>
+        <canvas id=jumlah_absen></canvas>
 
     </div>
 
@@ -99,16 +83,17 @@
         type: 'pie',
         data: {
             labels: [
-
+                @foreach ($jurusan as $j)
+                    "{!! $j->jurusan !!}",
+                @endforeach
             ],
             datasets: [{
                 data: [
-                    {!! $absened !!},
-                    {!! $absent !!}
+                    @foreach ($spj as $s)
+                        {!! $s !!},
+                    @endforeach
                 ],
                 backgroundColor: [
-                    '#808080',
-                    '#0861fd'
                 ]
             }]
         }

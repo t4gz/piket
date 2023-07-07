@@ -14,7 +14,7 @@ class siswa extends Model
         return $this->belongsTo(nama_kelas::class);
     }
 
-    public function jurusan(){
-        return $this->belongsTo(jurusan::class);
-    }
+    // public function jurusan(){
+    //     return $this->belongsTo(jurusan::class);
+    // }
 }
