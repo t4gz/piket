@@ -94,6 +94,9 @@
                     @endforeach
                 ],
                 backgroundColor: [
+                    @foreach ($jurusan as $j)
+                        "{!! $j->warna !!}",
+                    @endforeach
                 ]
             }]
         }
