@@ -16,6 +16,15 @@ class GuruMiddleware
      */
     public function handle(Request $request, Closure $next)
     {
-        return $next($request);
+        if (auth()->check()) {
+            $cek_role = auth()->user()->roles->role == "guru";
+            if (auth()->check() && $cek_role) {
+                return $next($request);
+            } else {
+                return redirect()->back();
+            }
+        } else {
+            return redirect('/');
+        }
     }
 }

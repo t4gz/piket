@@ -13,8 +13,12 @@ class siswa extends Model
     public function nama_kelas()  {
         return $this->belongsTo(nama_kelas::class);
     }
+// 
+    public function absen(){
+        return $this->hasMany(Absen::class);
+    }
 
-    // public function jurusan(){
-    //     return $this->belongsTo(jurusan::class);
-    // }
+    public function jadwals(){
+        return $this->belongsTo(jadwal::class);
+    }
 }

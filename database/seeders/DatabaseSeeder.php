@@ -19,8 +19,8 @@ class DatabaseSeeder extends Seeder
             AdminSeeder::class,
             GroupKelasSeeder::class,
             GuruSeeder::class,
+            JadwalSeeder::class,
             SiswaSeeder::class,
-            JadwalSeeder::class
         ]);
         // \App\Models\User::factory(10)->create();
 

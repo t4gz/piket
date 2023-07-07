@@ -9,4 +9,8 @@ class jadwal extends Model
 {
     use HasFactory;
     protected $guarded = [];
+
+    public function siswa(){
+        return $this->hasMany(siswa::class);
+    }
 }

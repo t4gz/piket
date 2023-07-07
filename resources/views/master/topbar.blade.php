@@ -184,6 +184,10 @@
                                 class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
                             Logout
                         </a>
+                        <a class="dropdown-item" href="{{ route('siswa') }}" data-toggle="modal"><i
+                                class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+                            profile
+                        </a>
                     </div>
                 </li>
             @endauth

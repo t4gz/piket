@@ -60,6 +60,11 @@
     </nav>
 
 
+    
+    <div class="center">
+        <h1 class="text-center">selamat dtang</h1>
+    </div>
+
     <div>
         <div class="table-responsive">
             <table class="table table-primary">
@@ -77,7 +82,6 @@
 
 </html>
 <script src="//cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.6/Chart.bundle.js"></script>
-{{-- <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> --}}
 <script>
     var data = {
         labels: [

@@ -17,7 +17,7 @@ return new class extends Migration
             $table->id();
             $table->string('deskripsi');
             $table->string('status');
-            $table->foreignId('siswas_id')->constrained('siswas')->cascadeOnDelete()->cascadeOnUpdate();
+            $table->foreignId('siswa_id')->constrained('siswas')->cascadeOnDelete()->cascadeOnUpdate();
             $table->timestamps();
         });
     }

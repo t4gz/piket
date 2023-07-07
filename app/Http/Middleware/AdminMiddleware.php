@@ -16,6 +16,15 @@ class AdminMiddleware
      */
     public function handle(Request $request, Closure $next)
     {
-        return $next($request);
+        if (auth()->check()) {
+            $cek_role = auth()->user()->roles->role == "admin";
+            if (auth()->check() && $cek_role) {
+                return $next($request);
+            }else{
+                return redirect()->back();
+            }
+        } else {
+            return redirect('/');
+        }
     }
 }
