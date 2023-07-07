@@ -19,7 +19,7 @@ class XII_RPL_2 extends Seeder
             [
                 'nisn' => 123123123,
                 'nama' => 'Inna Filjannati Aprilina',
-                'kelas_id' => 2,
+                'nama_kelas_id' => 2,
                 'users_id' => null,
                 'alamat' => 'jalan-jalan',
                 'jenis_kelamin' => 'perempuan',
@@ -27,7 +27,7 @@ class XII_RPL_2 extends Seeder
             [
                 'nisn' => 123123123,
                 'nama' => 'Ilham Bintang Herlambang',
-                'kelas_id' => 2,
+                'nama_kelas_id' => 2,
                 'users_id' => null,
                 'alamat' => 'jalan-jalan',
                 'jenis_kelamin' => 'laki -laki',
@@ -35,7 +35,7 @@ class XII_RPL_2 extends Seeder
             [
                 'nisn' => 123123123,
                 'nama' => 'Steven Alden Airlangga Cahya Ksatria Maulana Malik Ibrahim',
-                'kelas_id' => 2,
+                'nama_kelas_id' => 2,
                 'users_id' => null,
                 'alamat' => 'jalan-jalan',
                 'jenis_kelamin' => 'laki -laki',
@@ -43,7 +43,7 @@ class XII_RPL_2 extends Seeder
             [
                 'nisn' => 123123123,
                 'nama' => 'M. Alif Adiawan',
-                'kelas_id' => 2,
+                'nama_kelas_id' => 2,
                 'users_id' => null,
                 'alamat' => 'jalan-jalan',
                 'jenis_kelamin' => 'laki -laki',
@@ -51,7 +51,7 @@ class XII_RPL_2 extends Seeder
             [
                 'nisn' => 123123123,
                 'nama' => 'Rafli Dwi Ferdiansyah',
-                'kelas_id' => 2,
+                'nama_kelas_id' => 2,
                 'users_id' => null,
                 'alamat' => 'jalan-jalan',
                 'jenis_kelamin' => 'laki -laki',
@@ -59,7 +59,7 @@ class XII_RPL_2 extends Seeder
             [
                 'nisn' => 123123123,
                 'nama' => 'Mochammad Dwi Febriansyah',
-                'kelas_id' => 2,
+                'nama_kelas_id' => 2,
                 'users_id' => null,
                 'alamat' => 'jalan-jalan',
                 'jenis_kelamin' => 'laki - laki',

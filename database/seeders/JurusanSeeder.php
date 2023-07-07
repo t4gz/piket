@@ -2,11 +2,11 @@
 
 namespace Database\Seeders;
 
+use App\Models\jurusan;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
-use App\Models\kelas;
 
-class KelasSeeder extends Seeder
+class JurusanSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -15,18 +15,21 @@ class KelasSeeder extends Seeder
      */
     public function run()
     {
-        $kelas = [
+        $jurusan = [
             [
-                'kelas' =>'XII'
+                'jurusan' => 'RPL'
             ],
             [
-                'kelas' =>'XI'
+                'jurusan' => 'PH'
             ],
             [
-                'kelas' =>'X'
+                'jurusan' => 'BDP'
+            ],
+            [
+                'jurusan' => 'PSPT'
             ],
         ];
 
-        Kelas::insert($kelas);
+        jurusan::insert($jurusan);
     }
 }

@@ -11,6 +11,12 @@ use App\Http\Controllers\AbsenController;
 use App\Http\Controllers\AdminLaporanController;
 use App\Http\Controllers\AdminAbsenController;
 use App\Http\Controllers\LaporanController;
+use App\Models\Absen;
+use App\Models\jurusan;
+use App\Models\kelas;
+use App\Models\nama_kelas;
+use App\Models\siswa;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -29,7 +35,30 @@ Route::middleware('guest')->group(function () {
     Route::get(
         '/',
         function () {
-            return view('standard_page');
+            $kelas = nama_kelas::with('siswa')->get();
+            foreach ($kelas as $k) {
+                $jumlah[$k->id] = $k->siswa;
+            }
+
+
+            // $jurusan = jurusan::with('nama_kelas.siswa')->get();
+            $jurusan = jurusan::with('nama_kelas.siswa')->get();
+            foreach ($jurusan as $jur) {
+                foreach ($jur->nama_kelas as $k) {
+                    $a[] = $k->siswa;
+                }
+            }
+
+            $kelas = nama_kelas::withCount('jurusan', 'siswa')->get();
+            $jurusan = jurusan::withCount('nama_kelas.siswa')->get();
+            foreach ($kelas as $k) {
+                $a = $k->nama_kelas->sum('siswa_count');
+            }
+            return $a;
+            // $kas = 
+            $absened = Absen::where('created_at', today())->get();
+            $absent = siswa::all()->count();
+            return view('standard_page', compact('jumlah', 'absened', 'absent'));
         }
     );
 });

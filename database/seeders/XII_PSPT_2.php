@@ -19,7 +19,7 @@ class XII_PSPT_2 extends Seeder
             [
                 'nisn' => 123123123,
                 'nama' => 'Nayaka Dinda Amartya',
-                'kelas_id' => 8,
+                'nama_kelas_id' => 8,
                 'users_id' => null,
                 'alamat' => 'jalan-jalan',
                 'jenis_kelamin' => 'perempuan',
@@ -27,7 +27,7 @@ class XII_PSPT_2 extends Seeder
             [
                 'nisn' => 123123123,
                 'nama' => 'Tasya Kolilasari',
-                'kelas_id' => 8,
+                'nama_kelas_id' => 8,
                 'users_id' => null,
                 'alamat' => 'jalan-jalan',
                 'jenis_kelamin' => 'perempuan',
@@ -35,7 +35,7 @@ class XII_PSPT_2 extends Seeder
             [
                 'nisn' => 123123123,
                 'nama' => 'Pinky Avisa Ratri',
-                'kelas_id' => 8,
+                'nama_kelas_id' => 8,
                 'users_id' => null,
                 'alamat' => 'jalan-jalan',
                 'jenis_kelamin' => 'perempuan',
@@ -43,7 +43,7 @@ class XII_PSPT_2 extends Seeder
             [
                 'nisn' => 123123123,
                 'nama' => 'Zakiyah Afwafina Hidayah',
-                'kelas_id' => 8,
+                'nama_kelas_id' => 8,
                 'users_id' => null,
                 'alamat' => 'jalan-jalan',
                 'jenis_kelamin' => 'perempuan',
@@ -51,7 +51,7 @@ class XII_PSPT_2 extends Seeder
             [
                 'nisn' => 123123123,
                 'nama' => 'Nike Indah Safitri',
-                'kelas_id' => 8,
+                'nama_kelas_id' => 8,
                 'users_id' => null,
                 'alamat' => 'jalan-jalan',
                 'jenis_kelamin' => 'perempuan',
@@ -59,7 +59,7 @@ class XII_PSPT_2 extends Seeder
             [
                 'nisn' => 123123123,
                 'nama' => 'Olivia Marsha Sentosa',
-                'kelas_id' => 8,
+                'nama_kelas_id' => 8,
                 'users_id' => null,
                 'alamat' => 'jalan-jalan',
                 'jenis_kelamin' => 'perempuan',
