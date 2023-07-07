@@ -18,19 +18,19 @@ class JurusanSeeder extends Seeder
         $jurusan = [
             [
                 'jurusan' => 'RPL',
-                'warna' => ''
+                'warna' => '#fc8403'
             ],
             [
                 'jurusan' => 'PH',
-                'warna' => ''
+                'warna' => '#eb7ac7'
             ],
             [
                 'jurusan' => 'BDP',
-                'warna' => ''
+                'warna' => '#020f7d'
             ],
             [
                 'jurusan' => 'PSPT',
-                'warna' => ''
+                'warna' => '#9c82fa'
             ],
         ];
 

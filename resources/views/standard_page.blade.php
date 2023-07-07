@@ -76,32 +76,70 @@
 </body>
 
 </html>
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.6/Chart.bundle.js"></script>
+{{-- <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> --}}
 <script>
-    var chart_siswa = document.getElementById('jumlah_siswa');
-    var siswa = new Chart(chart_siswa, {
-        type: 'pie',
-        data: {
-            labels: [
-                @foreach ($jurusan as $j)
-                    "{!! $j->jurusan !!}",
+    var data = {
+        labels: [
+            @foreach ($jurusan as $j)
+                "{!! $j->jurusan !!}",
+            @endforeach
+        ],
+        datasets: [{
+            data: [
+                @foreach ($spj as $s)
+                    {!! $s !!},
                 @endforeach
             ],
-            datasets: [{
-                data: [
-                    @foreach ($spj as $s)
-                        {!! $s !!},
-                    @endforeach
-                ],
-                backgroundColor: [
-                    @foreach ($jurusan as $j)
-                        "{!! $j->warna !!}",
-                    @endforeach
-                ]
-            }]
+            backgroundColor: [
+                @foreach ($jurusan as $j)
+                    "{!! $j->warna !!}",
+                @endforeach
+            ],
+        }]
+    };
+
+    var promisedDeliveryChart = new Chart(document.getElementById('jumlah_siswa'), {
+        type: 'doughnut',
+        data: data,
+        options: {
+            responsive: true,
+            legend: {
+                display: false
+            }
         }
     });
 
+    Chart.pluginService.register({
+        beforeDraw: function(chart) {
+            var width = chart.chart.width,
+                height = chart.chart.height,
+                ctx = chart.chart.ctx;
+
+            ctx.restore();
+            var fontSize = (height / 200).toFixed(2);
+            ctx.font = fontSize + "em sans-serif";
+            ctx.textBaseline = "middle";
+
+            var textA = "Total Siswa",
+                textAX = Math.round((width - ctx.measureText(textA).width) / 2),
+                textAY = height / 2 - 50;
+            ctx.fillText(textA, textAX, textAY);
+
+            var data = chart.data.datasets[0].data;
+
+            var textB = "{!! $absent !!}",
+                textBX = Math.round((width - ctx.measureText(textB).width) / 2),
+                textBY = height / 2 + 50; // Mengatur posisi teks di bawah grafik
+
+            ctx.fillText(textB, textBX, textBY);
+            ctx.save();
+        }
+    });
+
+
+
+    // absen
     var chart_absen = document.getElementById('jumlah_absen');
     var absen = new Chart(chart_absen, {
         type: 'pie',
@@ -116,8 +154,8 @@
                     {!! $absent !!}
                 ],
                 backgroundColor: [
-                    '#808080',
-                    '#0861fd'
+                    '#02b039',
+                    '#b00202'
                 ]
             }]
         }
