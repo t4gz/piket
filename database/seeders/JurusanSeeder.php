@@ -17,16 +17,20 @@ class JurusanSeeder extends Seeder
     {
         $jurusan = [
             [
-                'jurusan' => 'RPL'
+                'jurusan' => 'RPL',
+                'warna' => ''
             ],
             [
-                'jurusan' => 'PH'
+                'jurusan' => 'PH',
+                'warna' => ''
             ],
             [
-                'jurusan' => 'BDP'
+                'jurusan' => 'BDP',
+                'warna' => ''
             ],
             [
-                'jurusan' => 'PSPT'
+                'jurusan' => 'PSPT',
+                'warna' => ''
             ],
         ];
 
