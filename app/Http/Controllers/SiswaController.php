@@ -46,7 +46,7 @@ class SiswaController extends Controller
      */
     public function show($id)
     {
-        //
+        
     }
 
     /**

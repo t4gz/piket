@@ -4,7 +4,10 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Absen;
-use Session;
+use App\Models\jurusan;
+use App\Models\nama_kelas;
+use App\Models\siswa;
+use illuminate\Support\Facades\Session;
 
 class AdminAbsenController extends Controller
 {
@@ -15,8 +18,9 @@ class AdminAbsenController extends Controller
      */
     public function index()
     {
-        $data = Absen::orderBy('created_at','desc')->get();     
-        return view('admin.absen_admin', compact('data'));
+        $data = Absen::orderBy('created_at', 'desc')->get();
+        $absen = Absen::where('created_at',today())->get();
+        return view('admin.absen_admin', compact('absen'));
     }
 
     /**
@@ -48,7 +52,7 @@ class AdminAbsenController extends Controller
      */
     public function show($id)
     {
-        $absen=Absen::find($id);
+        $absen = Absen::find($id);
         return view('admin.show_absen_admin', compact('absen'));
     }
 
@@ -88,8 +92,8 @@ class AdminAbsenController extends Controller
 
     public function hapus()
     {
-        Absen::truncate();
-        Session::flash('hapus', "Berhasil Menghapus !!");
-        return redirect('/absen-admin');
+        // Absen::truncate();
+        // Session::flash('hapus', "Berhasil Menghapus !!");
+        // return redirect('/absen-admin');
     }
 }

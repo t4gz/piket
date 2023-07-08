@@ -15,7 +15,7 @@ class LoginController extends Controller
 
     public function authenticate(Request $request)
     {
-        $data=$request->validate([
+        $data = $request->validate([
             'email' => ['required'],
             'password' => ['required'],
         ]);
@@ -23,11 +23,12 @@ class LoginController extends Controller
         if (Auth::attempt($data)) {
             $request->session()->regenerate();
 
-            if(auth()->user()->role=='admin'){
-                return redirect()->intended('/admin');
+            if (auth()->user()->roles->role == 'admin') {
+                // return 'admin';
+                return redirect()->intended('admin');
             }
 
-            if(auth()->user()->role=='siswa'){
+            if (auth()->user()->roles->role == 'siswa') {
                 return redirect()->intended('/siswa');
             }
         }
@@ -42,7 +43,7 @@ class LoginController extends Controller
         ]);
     }
 
-    
+
 
     public function logout(Request $request)
     {

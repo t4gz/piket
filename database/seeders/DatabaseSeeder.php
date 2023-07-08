@@ -17,10 +17,10 @@ class DatabaseSeeder extends Seeder
         $this->call([
             RoleSeeder::class,
             AdminSeeder::class,
-            KelasSeeder::class,
+            GroupKelasSeeder::class,
             GuruSeeder::class,
+            JadwalSeeder::class,
             SiswaSeeder::class,
-            JadwalSeeder::class
         ]);
         // \App\Models\User::factory(10)->create();
 

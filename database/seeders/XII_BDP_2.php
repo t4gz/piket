@@ -43,7 +43,7 @@ class XII_BDP_2 extends Seeder
             [
                 'nisn' => 123123123,
                 'nama' => 'Marcella Natasya Syahfitri',
-                'kelas_id' => 6,
+                'nama_kelas_id' => 6,
                 'users_id' => null,
                 'alamat' => 'jalan-jalan',
                 'jenis_kelamin' => 'laki - laki',
@@ -99,7 +99,7 @@ class XII_BDP_2 extends Seeder
              [
                 'nisn' => 123123123,
                 'nama' => 'Nadia Dwi Rahmawati',
-                'kelas_id' => 6,
+                'nama_kelas_id' => 6,
                 'users_id' => null,
                 'alamat' => 'jalan-jalan',
                 'jenis_kelamin' => 'laki - laki',

@@ -43,7 +43,7 @@ class XII_RPL_2 extends Seeder
             [
                 'nisn' => 123123123,
                 'nama' => 'Ilham Bintang Herlambang',
-                'kelas_id' => 2,
+                'nama_kelas_id' => 2,
                 'users_id' => null,
                 'alamat' => 'jalan-jalan',
                 'jenis_kelamin' => 'laki -laki',
@@ -139,7 +139,7 @@ class XII_RPL_2 extends Seeder
             [
                 'nisn' => 123123123,
                 'nama' => 'Mochammad Dwi Febriansyah',
-                'kelas_id' => 2,
+                'nama_kelas_id' => 2,
                 'users_id' => null,
                 'alamat' => 'jalan-jalan',
                 'jenis_kelamin' => 'laki - laki',

@@ -18,6 +18,71 @@ class XII_PSPT_1 extends Seeder
         $kelas = [
             [
                 'nisn' => 123123123,
+                'nama' => 'Adinda Adzani Rahmadanti',
+                'kelas_id' => 7,
+                'users_id' => null,
+                'alamat' => 'jalan-jalan',
+                'jenis_kelamin' => 'perempuan',
+            ],
+            [
+                'nisn' => 123123123,
+                'nama' => 'Aditya Kurniawan Syahputra',
+                'kelas_id' => 7,
+                'users_id' => null,
+                'alamat' => 'jalan-jalan',
+                'jenis_kelamin' => 'perempuan',
+            ],
+            [
+                'nisn' => 123123123,
+                'nama' => 'Ainun Evi Maisaroh',
+                'kelas_id' => 7,
+                'users_id' => null,
+                'alamat' => 'jalan-jalan',
+                'jenis_kelamin' => 'perempuan',
+            ],
+            [
+                'nisn' => 123123123,
+                'nama' => 'Alya Chelsea Ramadhani',
+                'kelas_id' => 7,
+                'users_id' => null,
+                'alamat' => 'jalan-jalan',
+                'jenis_kelamin' => 'perempuan',
+            ],
+            [
+                'nisn' => 123123123,
+                'nama' => 'Amanda Kayla Noer Farida',
+                'kelas_id' => 7,
+                'users_id' => null,
+                'alamat' => 'jalan-jalan',
+                'jenis_kelamin' => 'perempuan',
+            ],
+            [
+                'nisn' => 123123123,
+                'nama' => 'An Nisa` Amalia',
+                'kelas_id' => 7,
+                'users_id' => null,
+                'alamat' => 'jalan-jalan',
+                'jenis_kelamin' => 'perempuan',
+            ],
+            [
+                'nisn' => 123123123,
+                'nama' => 'Ananta Dhea Putri Pamudji',
+                'kelas_id' => 7,
+                'users_id' => null,
+                'alamat' => 'jalan-jalan',
+                'jenis_kelamin' => 'perempuan',
+            ],
+            [
+                'nisn' => 123123123,
+                'nama' => 'Ardhan Haqqi Wicaksono',
+                'kelas_id' => 7,
+                'users_id' => null,
+                'alamat' => 'jalan-jalan',
+                'jenis_kelamin' => 'perempuan',
+            ],
+            
+            [
+                'nisn' => 123123123,
                 'nama' => 'Ardinda Dewi Nurjannah',
                 'kelas_id' => 7,
                 'users_id' => null,
@@ -131,15 +196,20 @@ class XII_PSPT_1 extends Seeder
              [
                 'nisn' => 123123123,
                 'nama' => 'Dista Larasati',
-                'kelas_id' => 7,
+                'nama_kelas_id' => 7,
                 'users_id' => null,
                 'alamat' => 'jalan-jalan',
                 'jenis_kelamin' => 'perempuan',
             ],
              [
                 'nisn' => 123123123,
+<<<<<<< HEAD
                 'nama' => 'Elrnira Rahma Qudsyah',
                 'kelas_id' => 7,
+=======
+                'nama' => 'Elmira Rahma Q',
+                'nama_kelas_id' => 7,
+>>>>>>> b75ffbcabb0299ef43d2396d4191c934ecf4cf8c
                 'users_id' => null,
                 'alamat' => 'jalan-jalan',
                 'jenis_kelamin' => 'perempuan',
@@ -195,7 +265,7 @@ class XII_PSPT_1 extends Seeder
              [
                 'nisn' => 123123123,
                 'nama' => 'Grisheilla Advitiya',
-                'kelas_id' => 7,
+                'nama_kelas_id' => 7,
                 'users_id' => null,
                 'alamat' => 'jalan-jalan',
                 'jenis_kelamin' => 'perempuan',

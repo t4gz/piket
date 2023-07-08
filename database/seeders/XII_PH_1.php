@@ -67,7 +67,7 @@ class XII_PH_1 extends Seeder
             [
                 'nisn' => 123123123,
                 'nama' => 'Angga Krisna Yudha',
-                'kelas_id' => 3,
+                'nama_kelas_id' => 3,
                 'users_id' => null,
                 'alamat' => 'jalan-jalan',
                 'jenis_kelamin' => 'perempuan',

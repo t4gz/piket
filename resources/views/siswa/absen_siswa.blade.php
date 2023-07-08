@@ -97,19 +97,24 @@
     <div class="container">
         <form method="post" enctype="multipart/form-data" action="{{ route('absen.store') }}">
             @csrf
-            <input type="hidden" name="nama" value="{{ auth()->user()->name }}">
-            <input type="hidden" name="nisn" value="{{ auth()->user()->nisn }}">
             <div class="row mb-3">
-                <label for="deskripsi" class="col-sm-2 col-form-label" required>Deskripsi</label>
-                <div class="col-sm-10">
-                    <input type="text" name="deskripsi" class="form-control">
+                <label for="deskripsi" class="col-sm-3 col-form-label" required>Deskripsi</label>
+                <div class="col-sm-9">
+                    <input type="text" name="deskripsi" class="form-control" required>
                 </div>
             </div>
 
             <div class="row mb-3">
-                <label for="inputFile" class="col-sm-2 col-form-label">Upload Foto (bukti)</label>
-                <div class="col-sm-10">
-                    <input type="file" class="form-control-file" id="foto" name="foto" value="">
+                <label for="inputFile" class="col-sm-3 col-form-label">Upload Foto (Individu)</label>
+                <div class="col-sm-9">
+                    <input type="file" class="form-control-file" id="individu" name="individu" value="" required>
+                </div>
+            </div>
+
+            <div class="row mb-3">
+                <label for="inputFile" class="col-sm-3 col-form-label">Upload Foto (Kelompok Absen)</label>
+                <div class="col-sm-9">
+                    <input type="file" class="form-control-file" id="kelompok" name="kelompok" value="" required>
                 </div>
             </div>
 

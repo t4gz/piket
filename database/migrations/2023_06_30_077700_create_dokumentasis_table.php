@@ -16,6 +16,7 @@ return new class extends Migration
         Schema::create('dokumentasis', function (Blueprint $table) {
             $table->id();
             $table->string('foto');
+            $table->string('keterangan');
             $table->foreignId('dokumentasis_id')->constrained('absens')->cascadeOnDelete()->cascadeOnUpdate();
             $table->timestamps();
         });

@@ -43,7 +43,7 @@ class XII_BDP_1 extends Seeder
             [
                 'nisn' => 123123123,
                 'nama' => 'Ainur Rohmah',
-                'kelas_id' => 5,
+                'nama_kelas_id' => 5,
                 'users_id' => null,
                 'alamat' => 'jalan-jalan',
                 'jenis_kelamin' => 'laki - laki',
@@ -148,7 +148,7 @@ class XII_BDP_1 extends Seeder
             [
                 'nisn' => 123123123,
                 'nama' => 'Deastika Pramesti',
-                'kelas_id' => 5,
+                'nama_kelas_id' => 5,
                 'users_id' => null,
                 'alamat' => 'jalan-jalan',
                 'jenis_kelamin' => 'laki - laki',
@@ -164,7 +164,7 @@ class XII_BDP_1 extends Seeder
             [
                 'nisn' => 123123123,
                 'nama' => 'Diva Annastasya',
-                'kelas_id' => 5,
+                'nama_kelas_id' => 5,
                 'users_id' => null,
                 'alamat' => 'jalan-jalan',
                 'jenis_kelamin' => 'laki - laki',
@@ -268,7 +268,7 @@ class XII_BDP_1 extends Seeder
             [
                 'nisn' => 123123123,
                 'nama' => 'M. Fudi',
-                'kelas_id' => 5,
+                'nama_kelas_id' => 5,
                 'users_id' => null,
                 'alamat' => 'jalan-jalan',
                 'jenis_kelamin' => 'laki - laki',
