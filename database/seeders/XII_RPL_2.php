@@ -19,7 +19,7 @@ class XII_RPL_2 extends Seeder
             [
                 'nisn' => 123123123,
                 'nama' => 'Ibrahim',
-                'kelas_id' => 2,
+                'nama_kelas_id' => 2,
                 'users_id' => null,
                 'alamat' => 'jalan-jalan',
                 'jenis_kelamin' => 'perempuan',
@@ -27,7 +27,7 @@ class XII_RPL_2 extends Seeder
             [
                 'nisn' => 123123123,
                 'nama' => 'Ibrahim Rizky Fadilah',
-                'kelas_id' => 2,
+                'nama_kelas_id' => 2,
                 'users_id' => null,
                 'alamat' => 'jalan-jalan',
                 'jenis_kelamin' => 'laki -laki',
@@ -35,7 +35,7 @@ class XII_RPL_2 extends Seeder
             [
                 'nisn' => 123123123,
                 'nama' => 'Iksan Arya Dinata',
-                'kelas_id' => 2,
+                'nama_kelas_id' => 2,
                 'users_id' => null,
                 'alamat' => 'jalan-jalan',
                 'jenis_kelamin' => 'laki -laki',
@@ -51,7 +51,7 @@ class XII_RPL_2 extends Seeder
             [
                 'nisn' => 123123123,
                 'nama' => 'Inna Filjannati Aprilina',
-                'kelas_id' => 2,
+                'nama_kelas_id' => 2,
                 'users_id' => null,
                 'alamat' => 'jalan-jalan',
                 'jenis_kelamin' => 'laki -laki',
@@ -59,7 +59,7 @@ class XII_RPL_2 extends Seeder
             [
                 'nisn' => 123123123,
                 'nama' => 'Jaya Raharja',
-                'kelas_id' => 2,
+                'nama_kelas_id' => 2,
                 'users_id' => null,
                 'alamat' => 'jalan-jalan',
                 'jenis_kelamin' => 'laki - laki',
@@ -67,7 +67,7 @@ class XII_RPL_2 extends Seeder
             [
                 'nisn' => 123123123,
                 'nama' => 'Julian Fernando Ekapanca Putra',
-                'kelas_id' => 2,
+                'nama_kelas_id' => 2,
                 'users_id' => null,
                 'alamat' => 'jalan-jalan',
                 'jenis_kelamin' => 'laki - laki',
@@ -75,7 +75,7 @@ class XII_RPL_2 extends Seeder
             [
                 'nisn' => 123123123,
                 'nama' => 'Kevin Nur Prasetya',
-                'kelas_id' => 2,
+                'nama_kelas_id' => 2,
                 'users_id' => null,
                 'alamat' => 'jalan-jalan',
                 'jenis_kelamin' => 'laki - laki',
@@ -83,7 +83,7 @@ class XII_RPL_2 extends Seeder
             [
                 'nisn' => 123123123,
                 'nama' => 'Khafidatul Rahma',
-                'kelas_id' => 2,
+                'nama_kelas_id' => 2,
                 'users_id' => null,
                 'alamat' => 'jalan-jalan',
                 'jenis_kelamin' => 'laki - laki',
@@ -91,7 +91,7 @@ class XII_RPL_2 extends Seeder
             [
                 'nisn' => 123123123,
                 'nama' => 'Kholifa Az Zahro Nuraini',
-                'kelas_id' => 2,
+                'nama_kelas_id' => 2,
                 'users_id' => null,
                 'alamat' => 'jalan-jalan',
                 'jenis_kelamin' => 'laki - laki',
@@ -99,7 +99,7 @@ class XII_RPL_2 extends Seeder
             [
                 'nisn' => 123123123,
                 'nama' => 'Lovianno Desta Satriawan',
-                'kelas_id' => 2,
+                'nama_kelas_id' => 2,
                 'users_id' => null,
                 'alamat' => 'jalan-jalan',
                 'jenis_kelamin' => 'laki - laki',
@@ -107,7 +107,7 @@ class XII_RPL_2 extends Seeder
             [
                 'nisn' => 123123123,
                 'nama' => 'M. Irfan Maulana',
-                'kelas_id' => 2,
+                'nama_kelas_id' => 2,
                 'users_id' => null,
                 'alamat' => 'jalan-jalan',
                 'jenis_kelamin' => 'laki - laki',
@@ -115,7 +115,7 @@ class XII_RPL_2 extends Seeder
             [
                 'nisn' => 123123123,
                 'nama' => 'Mahestu Bagus Senaru Pratama',
-                'kelas_id' => 2,
+                'nama_kelas_id' => 2,
                 'users_id' => null,
                 'alamat' => 'jalan-jalan',
                 'jenis_kelamin' => 'laki - laki',
@@ -123,7 +123,7 @@ class XII_RPL_2 extends Seeder
             [
                 'nisn' => 123123123,
                 'nama' => 'Maulaanaa Yahya',
-                'kelas_id' => 2,
+                'nama_kelas_id' => 2,
                 'users_id' => null,
                 'alamat' => 'jalan-jalan',
                 'jenis_kelamin' => 'laki - laki',
@@ -131,7 +131,7 @@ class XII_RPL_2 extends Seeder
             [
                 'nisn' => 123123123,
                 'nama' => 'Maulana Gustaf Dzikrulloh',
-                'kelas_id' => 2,
+                'nama_kelas_id' => 2,
                 'users_id' => null,
                 'alamat' => 'jalan-jalan',
                 'jenis_kelamin' => 'laki - laki',
@@ -147,7 +147,7 @@ class XII_RPL_2 extends Seeder
             [
                 'nisn' => 123123123,
                 'nama' => 'Moreno Hernakov',
-                'kelas_id' => 2,
+                'nama_kelas_id' => 2,
                 'users_id' => null,
                 'alamat' => 'jalan-jalan',
                 'jenis_kelamin' => 'laki - laki',
@@ -155,7 +155,7 @@ class XII_RPL_2 extends Seeder
             [
                 'nisn' => 123123123,
                 'nama' => 'Muhamad Rifky Ramadhani',
-                'kelas_id' => 2,
+                'nama_kelas_id' => 2,
                 'users_id' => null,
                 'alamat' => 'jalan-jalan',
                 'jenis_kelamin' => 'laki - laki',
@@ -163,7 +163,7 @@ class XII_RPL_2 extends Seeder
             [
                 'nisn' => 123123123,
                 'nama' => 'Muhammad Aldi Sulinarta',
-                'kelas_id' => 2,
+                'nama_kelas_id' => 2,
                 'users_id' => null,
                 'alamat' => 'jalan-jalan',
                 'jenis_kelamin' => 'laki - laki',
@@ -171,7 +171,7 @@ class XII_RPL_2 extends Seeder
             [
                 'nisn' => 123123123,
                 'nama' => 'Muhammad Alif Adiawan',
-                'kelas_id' => 2,
+                'nama_kelas_id' => 2,
                 'users_id' => null,
                 'alamat' => 'jalan-jalan',
                 'jenis_kelamin' => 'laki - laki',
@@ -179,7 +179,7 @@ class XII_RPL_2 extends Seeder
             [
                 'nisn' => 123123123,
                 'nama' => 'Muhammad Ammar Muzhaffar',
-                'kelas_id' => 2,
+                'nama_kelas_id' => 2,
                 'users_id' => null,
                 'alamat' => 'jalan-jalan',
                 'jenis_kelamin' => 'laki - laki',
@@ -187,7 +187,7 @@ class XII_RPL_2 extends Seeder
             [
                 'nisn' => 123123123,
                 'nama' => 'Muhammad Bintang Yusuf',
-                'kelas_id' => 2,
+                'nama_kelas_id' => 2,
                 'users_id' => null,
                 'alamat' => 'jalan-jalan',
                 'jenis_kelamin' => 'laki - laki',
@@ -195,7 +195,7 @@ class XII_RPL_2 extends Seeder
             [
                 'nisn' => 123123123,
                 'nama' => 'Muhammad Dliyaa Haq Shidqey',
-                'kelas_id' => 2,
+                'nama_kelas_id' => 2,
                 'users_id' => null,
                 'alamat' => 'jalan-jalan',
                 'jenis_kelamin' => 'laki - laki',
@@ -203,7 +203,7 @@ class XII_RPL_2 extends Seeder
             [
                 'nisn' => 123123123,
                 'nama' => 'Muhammad Rafif Al Azhar',
-                'kelas_id' => 2,
+                'nama_kelas_id' => 2,
                 'users_id' => null,
                 'alamat' => 'jalan-jalan',
                 'jenis_kelamin' => 'laki - laki',
@@ -211,7 +211,7 @@ class XII_RPL_2 extends Seeder
             [
                 'nisn' => 123123123,
                 'nama' => 'Muhammad Tsany Fulviansyah',
-                'kelas_id' => 2,
+                'nama_kelas_id' => 2,
                 'users_id' => null,
                 'alamat' => 'jalan-jalan',
                 'jenis_kelamin' => 'laki - laki',
@@ -219,7 +219,7 @@ class XII_RPL_2 extends Seeder
             [
                 'nisn' => 123123123,
                 'nama' => 'Nadhira Shafa Baby Permadi',
-                'kelas_id' => 2,
+                'nama_kelas_id' => 2,
                 'users_id' => null,
                 'alamat' => 'jalan-jalan',
                 'jenis_kelamin' => 'laki - laki',
@@ -227,7 +227,7 @@ class XII_RPL_2 extends Seeder
             [
                 'nisn' => 123123123,
                 'nama' => 'Rafli Dwi Ferdiansyah',
-                'kelas_id' => 2,
+                'nama_kelas_id' => 2,
                 'users_id' => null,
                 'alamat' => 'jalan-jalan',
                 'jenis_kelamin' => 'laki - laki',
@@ -235,7 +235,7 @@ class XII_RPL_2 extends Seeder
             [
                 'nisn' => 123123123,
                 'nama' => 'Rahmad Rizki Firmansyah',
-                'kelas_id' => 2,
+                'nama_kelas_id' => 2,
                 'users_id' => null,
                 'alamat' => 'jalan-jalan',
                 'jenis_kelamin' => 'laki - laki',
@@ -243,7 +243,7 @@ class XII_RPL_2 extends Seeder
             [
                 'nisn' => 123123123,
                 'nama' => 'Renaldy Naufal Tsabitul Azmi',
-                'kelas_id' => 2,
+                'nama_kelas_id' => 2,
                 'users_id' => null,
                 'alamat' => 'jalan-jalan',
                 'jenis_kelamin' => 'laki - laki',
@@ -251,7 +251,7 @@ class XII_RPL_2 extends Seeder
             [
                 'nisn' => 123123123,
                 'nama' => 'Reza Ardiansyah',
-                'kelas_id' => 2,
+                'nama_kelas_id' => 2,
                 'users_id' => null,
                 'alamat' => 'jalan-jalan',
                 'jenis_kelamin' => 'laki - laki',
@@ -259,7 +259,7 @@ class XII_RPL_2 extends Seeder
             [
                 'nisn' => 123123123,
                 'nama' => 'Rizky Marcellino',
-                'kelas_id' => 2,
+                'nama_kelas_id' => 2,
                 'users_id' => null,
                 'alamat' => 'jalan-jalan',
                 'jenis_kelamin' => 'laki - laki',
@@ -267,7 +267,7 @@ class XII_RPL_2 extends Seeder
             [
                 'nisn' => 123123123,
                 'nama' => 'Robet Alfahmi',
-                'kelas_id' => 2,
+                'nama_kelas_id' => 2,
                 'users_id' => null,
                 'alamat' => 'jalan-jalan',
                 'jenis_kelamin' => 'laki - laki',
@@ -275,7 +275,7 @@ class XII_RPL_2 extends Seeder
             [
                 'nisn' => 123123123,
                 'nama' => 'Ryan Wahyu Syahputra',
-                'kelas_id' => 2,
+                'nama_kelas_id' => 2,
                 'users_id' => null,
                 'alamat' => 'jalan-jalan',
                 'jenis_kelamin' => 'laki - laki',
@@ -283,7 +283,7 @@ class XII_RPL_2 extends Seeder
             [
                 'nisn' => 123123123,
                 'nama' => 'Steven Alden Airlangga Cahya Ksatria Maulana Malik Ibrahim',
-                'kelas_id' => 2,
+                'nama_kelas_id' => 2,
                 'users_id' => null,
                 'alamat' => 'jalan-jalan',
                 'jenis_kelamin' => 'laki - laki',
@@ -291,7 +291,7 @@ class XII_RPL_2 extends Seeder
             [
                 'nisn' => 123123123,
                 'nama' => 'Tora Digda Kristiawan',
-                'kelas_id' => 2,
+                'nama_kelas_id' => 2,
                 'users_id' => null,
                 'alamat' => 'jalan-jalan',
                 'jenis_kelamin' => 'laki - laki',
@@ -299,7 +299,7 @@ class XII_RPL_2 extends Seeder
             [
                 'nisn' => 123123123,
                 'nama' => 'Vardani Nafianur Rosidaningrum',
-                'kelas_id' => 2,
+                'nama_kelas_id' => 2,
                 'users_id' => null,
                 'alamat' => 'jalan-jalan',
                 'jenis_kelamin' => 'laki - laki',
@@ -307,7 +307,7 @@ class XII_RPL_2 extends Seeder
             [
                 'nisn' => 123123123,
                 'nama' => 'Vita Febriani Putri',
-                'kelas_id' => 2,
+                'nama_kelas_id' => 2,
                 'users_id' => null,
                 'alamat' => 'jalan-jalan',
                 'jenis_kelamin' => 'laki - laki',
