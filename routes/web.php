@@ -99,9 +99,7 @@ Route::middleware('siswa')->group(function () {
 
     Route::resource('laporan', LaporanController::class);
 
-    Route::get('info', function () {
-        return view('siswa.info_siswa');
-    });
+    Route::get('/info-siswa', [DashboardSiswaController::class, 'info'])->name('siswa.info');
 });
 
 //landing 

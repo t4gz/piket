@@ -19,7 +19,8 @@ class DashboardSiswaController extends Controller
         // $siswa = siswa::where('users_id', $auth)->with('jadwals','absens')->first();
         $siswa = siswa::where('users_id', $auth)->first();
         $soj = siswa::whereHas('jadwals', function ($query) use ($siswa) {
-            $query->where('jadwals_id', $siswa->jadwals->id);
+            // $query->where('jadwals_id', optional($siswa->jadwals)->id)->where('nama_kelas_id', $siswa->nama_kelas_id);
+            $query->where('jadwals_id', optional($siswa->jadwals)->id)->where('nama_kelas_id', $siswa->nama_kelas_id);
         })->get();
         $guru = guru::where('namakelas_id', $siswa->nama_kelas_id)->first();
         $compact = ['auth', 'siswa', 'soj', 'guru'];
@@ -56,6 +57,11 @@ class DashboardSiswaController extends Controller
     public function show($id)
     {
         // return view();
+    }
+
+    public function info($id)
+    {
+        return view('info_siswa');
     }
 
     /**
