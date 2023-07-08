@@ -19,9 +19,9 @@ return new class extends Migration
             $table->string('nisn');
             $table->string('jenis_kelamin');
             $table->string('alamat');
-            $table->foreignId('jadwals_id')->nullable()->constrained('jadwals')->cascadeOnDelete()->cascadeOnUpdate();
-            $table->foreignId('kelas_id')->constrained('kelas')->cascadeOnDelete()->cascadeOnUpdate();
-            $table->foreignId('users_id')->nullable()->constrained('users')->cascadeOnDelete()->cascadeOnUpdate()->nullable();
+            $table->foreignId('jadwals_id')->nullable()->constrained()->cascadeOnDelete()->cascadeOnUpdate();
+            $table->foreignId('nama_kelas_id')->constrained()->cascadeOnDelete()->cascadeOnUpdate();
+            $table->foreignId('users_id')->nullable()->constrained()->cascadeOnDelete()->cascadeOnUpdate()->nullable();
             $table->timestamps();
         });
     }

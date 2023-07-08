@@ -17,28 +17,13 @@ class KelasSeeder extends Seeder
     {
         $kelas = [
             [
-                'nama_kelas' => 'XII RPL 1'
+                'kelas' =>'XII'
             ],
             [
-                'nama_kelas' => 'XII RPL 2'
+                'kelas' =>'XI'
             ],
             [
-                'nama_kelas' => 'XII PH 1'
-            ],
-            [
-                'nama_kelas' => 'XII PH 2'
-            ],
-            [
-                'nama_kelas' => 'XII BDP 1'
-            ],
-            [
-                'nama_kelas' => 'XII BDP 2'
-            ],
-            [
-                'nama_kelas' => 'XII PSPT 1'
-            ],
-            [
-                'nama_kelas' => 'XII PSPT 2'
+                'kelas' =>'X'
             ],
         ];
 

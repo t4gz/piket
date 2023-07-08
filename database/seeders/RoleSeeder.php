@@ -17,13 +17,13 @@ class RoleSeeder extends Seeder
     {
         $role = [
             [
-                'nama' => 'admin'
+                'role' => 'admin'
             ],
             [
-                'nama' => 'wakel'
+                'role' => 'wakel'
             ],
             [
-                'nama' => 'siswa'
+                'role' => 'siswa'
             ],
         ];
         role::insert($role);
