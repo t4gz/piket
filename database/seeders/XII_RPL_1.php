@@ -328,7 +328,7 @@ class XII_RPL_1 extends Seeder
             ],
             [
                 'nisn' => 123123123,
-                'nama' => 'Triaji Pangestu I-uhur Siahaan',
+                'nama' => 'Triaji Pangestu Luhur Siahaan',
                 'nama_kelas_id' => 1,
                 'users_id' => null,
                 'alamat' => 'jalan-jalan',
