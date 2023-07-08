@@ -56,7 +56,7 @@ class XII_RPL_1 extends Seeder
             [
                 'nisn' => 123123123,
                 'nama' => 'Adinda Jati Mulia',
-                'nama_kelas_id' => 1,
+                'nama_nama_kelas_id' => 1,
                 'users_id' => 5,
                 'jadwals_id' => 1,
                 'alamat' => 'jalan-jalan',
@@ -152,6 +152,7 @@ class XII_RPL_1 extends Seeder
                 'alamat' => 'jalan-jalan',
                 'jadwals_id' => null,
                 'jenis_kelamin' => 'laki - laki',
+                'jadwals_id' => null
             ],
             [
                 'nisn' => 123123123,
@@ -183,7 +184,7 @@ class XII_RPL_1 extends Seeder
             [
                 'nisn' => 123123123,
                 'nama' => 'Christiano Juan Rafael',
-                'nama_kelas_id' => 1,
+                'nama_nama_kelas_id' => 1,
                 'users_id' => 9,
                 'jadwals_id' => 1,
                 'alamat' => 'jalan-jalan',
@@ -270,7 +271,6 @@ class XII_RPL_1 extends Seeder
                 'alamat' => 'jalan-jalan',
                 'jenis_kelamin' => 'laki - laki',
                 'jadwals_id' => null
-
             ],
             [
                 'nisn' => 123123123,
@@ -328,14 +328,14 @@ class XII_RPL_1 extends Seeder
             ],
             [
                 'nisn' => 123123123,
-                'nama' => 'Triaji Pangestu Luhur Siahaan',
+                'nama' => 'Triaji Pangestu I-uhur Siahaan',
                 'nama_kelas_id' => 1,
                 'users_id' => null,
                 'alamat' => 'jalan-jalan',
                 'jenis_kelamin' => 'laki - laki',
                 'jadwals_id' => null
             ],
-            
+
 
         ];
 
