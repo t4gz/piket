@@ -60,7 +60,7 @@
     </nav>
 
 
-    
+
     <div class="center">
         <h1 class="text-center">selamat dtang</h1>
     </div>
