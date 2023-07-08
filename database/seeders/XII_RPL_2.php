@@ -23,6 +23,7 @@ class XII_RPL_2 extends Seeder
                 'users_id' => null,
                 'alamat' => 'jalan-jalan',
                 'jenis_kelamin' => 'perempuan',
+                'jadwals_id' => 1
             ],
             [
                 'nisn' => 123123123,
@@ -31,6 +32,7 @@ class XII_RPL_2 extends Seeder
                 'users_id' => null,
                 'alamat' => 'jalan-jalan',
                 'jenis_kelamin' => 'laki -laki',
+                'jadwals_id' => 1
             ],
             [
                 'nisn' => 123123123,
@@ -39,6 +41,7 @@ class XII_RPL_2 extends Seeder
                 'users_id' => null,
                 'alamat' => 'jalan-jalan',
                 'jenis_kelamin' => 'laki -laki',
+                'jadwals_id' => 1
             ],
             [
                 'nisn' => 123123123,
@@ -47,6 +50,7 @@ class XII_RPL_2 extends Seeder
                 'users_id' => null,
                 'alamat' => 'jalan-jalan',
                 'jenis_kelamin' => 'laki -laki',
+                'jadwals_id' => 1
             ],
             [
                 'nisn' => 123123123,
@@ -55,6 +59,7 @@ class XII_RPL_2 extends Seeder
                 'users_id' => null,
                 'alamat' => 'jalan-jalan',
                 'jenis_kelamin' => 'laki -laki',
+                'jadwals_id' => 1
             ],
             [
                 'nisn' => 123123123,
@@ -63,6 +68,7 @@ class XII_RPL_2 extends Seeder
                 'users_id' => null,
                 'alamat' => 'jalan-jalan',
                 'jenis_kelamin' => 'laki - laki',
+                'jadwals_id' => null
             ],
             [
                 'nisn' => 123123123,
@@ -71,6 +77,7 @@ class XII_RPL_2 extends Seeder
                 'users_id' => null,
                 'alamat' => 'jalan-jalan',
                 'jenis_kelamin' => 'laki - laki',
+                'jadwals_id' => null
             ],
             [
                 'nisn' => 123123123,
@@ -79,6 +86,7 @@ class XII_RPL_2 extends Seeder
                 'users_id' => null,
                 'alamat' => 'jalan-jalan',
                 'jenis_kelamin' => 'laki - laki',
+                'jadwals_id' => null
             ],
             [
                 'nisn' => 123123123,
@@ -87,6 +95,7 @@ class XII_RPL_2 extends Seeder
                 'users_id' => null,
                 'alamat' => 'jalan-jalan',
                 'jenis_kelamin' => 'laki - laki',
+                'jadwals_id' => null
             ],
             [
                 'nisn' => 123123123,
@@ -95,6 +104,7 @@ class XII_RPL_2 extends Seeder
                 'users_id' => null,
                 'alamat' => 'jalan-jalan',
                 'jenis_kelamin' => 'laki - laki',
+                'jadwals_id' => null
             ],
             [
                 'nisn' => 123123123,
@@ -103,6 +113,7 @@ class XII_RPL_2 extends Seeder
                 'users_id' => null,
                 'alamat' => 'jalan-jalan',
                 'jenis_kelamin' => 'laki - laki',
+                'jadwals_id' => null
             ],
             [
                 'nisn' => 123123123,
@@ -111,6 +122,7 @@ class XII_RPL_2 extends Seeder
                 'users_id' => null,
                 'alamat' => 'jalan-jalan',
                 'jenis_kelamin' => 'laki - laki',
+                'jadwals_id' => null
             ],
             [
                 'nisn' => 123123123,
@@ -119,6 +131,7 @@ class XII_RPL_2 extends Seeder
                 'users_id' => null,
                 'alamat' => 'jalan-jalan',
                 'jenis_kelamin' => 'laki - laki',
+                'jadwals_id' => null
             ],
             [
                 'nisn' => 123123123,
@@ -127,6 +140,7 @@ class XII_RPL_2 extends Seeder
                 'users_id' => null,
                 'alamat' => 'jalan-jalan',
                 'jenis_kelamin' => 'laki - laki',
+                'jadwals_id' => null
             ],
             [
                 'nisn' => 123123123,
@@ -135,6 +149,7 @@ class XII_RPL_2 extends Seeder
                 'users_id' => null,
                 'alamat' => 'jalan-jalan',
                 'jenis_kelamin' => 'laki - laki',
+                'jadwals_id' => null
             ],
             [
                 'nisn' => 123123123,
@@ -143,6 +158,7 @@ class XII_RPL_2 extends Seeder
                 'users_id' => null,
                 'alamat' => 'jalan-jalan',
                 'jenis_kelamin' => 'laki - laki',
+                'jadwals_id' => null
             ],
             [
                 'nisn' => 123123123,
@@ -151,6 +167,7 @@ class XII_RPL_2 extends Seeder
                 'users_id' => null,
                 'alamat' => 'jalan-jalan',
                 'jenis_kelamin' => 'laki - laki',
+                'jadwals_id' => null
             ],
             [
                 'nisn' => 123123123,
@@ -159,6 +176,7 @@ class XII_RPL_2 extends Seeder
                 'users_id' => null,
                 'alamat' => 'jalan-jalan',
                 'jenis_kelamin' => 'laki - laki',
+                'jadwals_id' => null
             ],
             [
                 'nisn' => 123123123,
@@ -167,6 +185,7 @@ class XII_RPL_2 extends Seeder
                 'users_id' => null,
                 'alamat' => 'jalan-jalan',
                 'jenis_kelamin' => 'laki - laki',
+                'jadwals_id' => null
             ],
             [
                 'nisn' => 123123123,
@@ -175,6 +194,7 @@ class XII_RPL_2 extends Seeder
                 'users_id' => null,
                 'alamat' => 'jalan-jalan',
                 'jenis_kelamin' => 'laki - laki',
+                'jadwals_id' => null
             ],
             [
                 'nisn' => 123123123,
@@ -183,6 +203,7 @@ class XII_RPL_2 extends Seeder
                 'users_id' => null,
                 'alamat' => 'jalan-jalan',
                 'jenis_kelamin' => 'laki - laki',
+                'jadwals_id' => null
             ],
             [
                 'nisn' => 123123123,
@@ -191,6 +212,7 @@ class XII_RPL_2 extends Seeder
                 'users_id' => null,
                 'alamat' => 'jalan-jalan',
                 'jenis_kelamin' => 'laki - laki',
+                'jadwals_id' => null
             ],
             [
                 'nisn' => 123123123,
@@ -199,6 +221,7 @@ class XII_RPL_2 extends Seeder
                 'users_id' => null,
                 'alamat' => 'jalan-jalan',
                 'jenis_kelamin' => 'laki - laki',
+                'jadwals_id' => null
             ],
             [
                 'nisn' => 123123123,
@@ -207,6 +230,7 @@ class XII_RPL_2 extends Seeder
                 'users_id' => null,
                 'alamat' => 'jalan-jalan',
                 'jenis_kelamin' => 'laki - laki',
+                'jadwals_id' => null
             ],
             [
                 'nisn' => 123123123,
@@ -215,6 +239,7 @@ class XII_RPL_2 extends Seeder
                 'users_id' => null,
                 'alamat' => 'jalan-jalan',
                 'jenis_kelamin' => 'laki - laki',
+                'jadwals_id' => null
             ],
             [
                 'nisn' => 123123123,
@@ -223,6 +248,7 @@ class XII_RPL_2 extends Seeder
                 'users_id' => null,
                 'alamat' => 'jalan-jalan',
                 'jenis_kelamin' => 'laki - laki',
+                'jadwals_id' => null
             ],
             [
                 'nisn' => 123123123,
@@ -231,6 +257,7 @@ class XII_RPL_2 extends Seeder
                 'users_id' => null,
                 'alamat' => 'jalan-jalan',
                 'jenis_kelamin' => 'laki - laki',
+                'jadwals_id' => null
             ],
             [
                 'nisn' => 123123123,
@@ -239,6 +266,7 @@ class XII_RPL_2 extends Seeder
                 'users_id' => null,
                 'alamat' => 'jalan-jalan',
                 'jenis_kelamin' => 'laki - laki',
+                'jadwals_id' => null
             ],
             [
                 'nisn' => 123123123,
@@ -247,6 +275,7 @@ class XII_RPL_2 extends Seeder
                 'users_id' => null,
                 'alamat' => 'jalan-jalan',
                 'jenis_kelamin' => 'laki - laki',
+                'jadwals_id' => null
             ],
             [
                 'nisn' => 123123123,
@@ -255,6 +284,7 @@ class XII_RPL_2 extends Seeder
                 'users_id' => null,
                 'alamat' => 'jalan-jalan',
                 'jenis_kelamin' => 'laki - laki',
+                'jadwals_id' => null
             ],
             [
                 'nisn' => 123123123,
@@ -263,6 +293,7 @@ class XII_RPL_2 extends Seeder
                 'users_id' => null,
                 'alamat' => 'jalan-jalan',
                 'jenis_kelamin' => 'laki - laki',
+                'jadwals_id' => null
             ],
             [
                 'nisn' => 123123123,
@@ -271,6 +302,7 @@ class XII_RPL_2 extends Seeder
                 'users_id' => null,
                 'alamat' => 'jalan-jalan',
                 'jenis_kelamin' => 'laki - laki',
+                'jadwals_id' => null
             ],
             [
                 'nisn' => 123123123,
@@ -279,6 +311,7 @@ class XII_RPL_2 extends Seeder
                 'users_id' => null,
                 'alamat' => 'jalan-jalan',
                 'jenis_kelamin' => 'laki - laki',
+                'jadwals_id' => null
             ],
             [
                 'nisn' => 123123123,
@@ -287,6 +320,7 @@ class XII_RPL_2 extends Seeder
                 'users_id' => null,
                 'alamat' => 'jalan-jalan',
                 'jenis_kelamin' => 'laki - laki',
+                'jadwals_id' => null
             ],
             [
                 'nisn' => 123123123,
@@ -295,6 +329,7 @@ class XII_RPL_2 extends Seeder
                 'users_id' => null,
                 'alamat' => 'jalan-jalan',
                 'jenis_kelamin' => 'laki - laki',
+                'jadwals_id' => null
             ],
             [
                 'nisn' => 123123123,
@@ -303,6 +338,7 @@ class XII_RPL_2 extends Seeder
                 'users_id' => null,
                 'alamat' => 'jalan-jalan',
                 'jenis_kelamin' => 'laki - laki',
+                'jadwals_id' => null
             ],
             [
                 'nisn' => 123123123,
@@ -311,6 +347,7 @@ class XII_RPL_2 extends Seeder
                 'users_id' => null,
                 'alamat' => 'jalan-jalan',
                 'jenis_kelamin' => 'laki - laki',
+                'jadwals_id' => null
             ],
 
 
