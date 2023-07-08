@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\guru;
+use App\Models\siswa;
 use Illuminate\Http\Request;
 
 class DashboardSiswaController extends Controller
@@ -13,7 +15,15 @@ class DashboardSiswaController extends Controller
      */
     public function index()
     {
-        return view('siswa.dashboard_siswa');
+        $auth = auth()->user()->id;
+        // $siswa = siswa::where('users_id', $auth)->with('jadwals','absens')->first();
+        $siswa = siswa::where('users_id', $auth)->first();
+        $soj = siswa::whereHas('jadwals', function ($query) use ($siswa) {
+            $query->where('jadwals_id', $siswa->jadwals->id);
+        })->get();
+        $guru = guru::where('namakelas_id', $siswa->nama_kelas_id)->first();
+        $compact = ['auth', 'siswa', 'soj', 'guru'];
+        return view('siswa.dashboard_siswa', compact($compact));
     }
 
     /**
@@ -45,7 +55,7 @@ class DashboardSiswaController extends Controller
      */
     public function show($id)
     {
-        //
+        // return view();
     }
 
     /**

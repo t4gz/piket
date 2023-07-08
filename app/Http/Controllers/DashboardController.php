@@ -2,9 +2,13 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Absen;
+use App\Models\jurusan;
 use Illuminate\Http\Request;
 use App\Models\User;
 use App\Models\laporan;
+use App\Models\nama_kelas;
+use App\Models\siswa;
 
 class DashboardController extends Controller
 {
@@ -17,7 +21,35 @@ class DashboardController extends Controller
     {
         $siswa = User::all()->where('role', '==', 'siswa');
         $laporan = laporan::all();
-        return view('admin.dashboard_admin', compact('siswa', 'laporan'));
+        $kelas = nama_kelas::with('jurusan')->withCount('siswa')->get();
+        $jurusan = jurusan::all();
+        $absened = Absen::where('created_at', today())->get();
+        $absent = siswa::all()->count();
+        $spj = [];
+        $currentJurusan = null;
+        $siswaCount = 0;
+
+        foreach ($kelas as $k) {
+            if ($currentJurusan !== $k->jurusan_id) {
+                if (!is_null($currentJurusan)) {
+                    // Menyimpan total siswa per jurusan sebelumnya
+                    $spj[$currentJurusan] = $siswaCount;
+                }
+
+                $currentJurusan = $k->jurusan_id;
+                $siswaCount = 0;
+            }
+
+            $siswaCount += $k->siswa_count;
+            $a[] = $k;
+        }
+
+        // Menyimpan total siswa untuk jurusan terakhir
+        if (!is_null($currentJurusan)) {
+            $spj[$currentJurusan] = $siswaCount;
+        }
+        $data_absen= ['jurusan','spj','absent','absened'];
+        return view('admin.dashboard_admin', compact('siswa', 'laporan',$data_absen));
     }
 
     /**

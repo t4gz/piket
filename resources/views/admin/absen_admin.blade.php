@@ -23,7 +23,7 @@
                     </div>
                 </div>
                 <div class="card mb-6">
-                    @if ($data->isEmpty())
+                    @if ($absen->isEmpty())
                         <div class="card-body">
                             <section class="text-center">
                                 <h3>Belum ada Siswa yang Absen 😔</h3>

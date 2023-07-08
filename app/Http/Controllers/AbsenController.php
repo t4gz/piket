@@ -4,8 +4,10 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Absen;
+use App\Models\dokumentasi;
+use App\Models\siswa;
 use Auth;
-use Session;
+use Illuminate\Support\Facades\Session;
 
 class AbsenController extends Controller
 {
@@ -16,6 +18,7 @@ class AbsenController extends Controller
      */
     public function index()
     {
+
         return view('siswa.absen_siswa');
     }
 
@@ -39,23 +42,45 @@ class AbsenController extends Controller
     {
         $validasi = $request->validate([
             'deskripsi' => 'required',
-            'foto' => 'required',
+            'individu' => 'required',
+            'kelompok' => 'required',
         ]);
 
         //ambil informasi file yang di upload 
-        $file = $request->file('foto');
+        $fileI = $request->file('individu');
+        $fileK = $request->file('kelompok');
         //rename 
-        $nama_file = time()."_".$file->getClientOriginalName();
+        $nama_fileI = time() . "_" . $fileI->getClientOriginalName();
+        $nama_fileK = time() . "_" . $fileK->getClientOriginalName();
         //proses upload 
-        $tujuan_upload= './Template/img';
-        $file->move($tujuan_upload,$nama_file);
+        $tujuan_upload = './Template/img';
+        $fileI->move($tujuan_upload, $nama_fileI);
+        $fileK->move($tujuan_upload, $nama_fileK);
 
-        Absen::create([
-            'nama' => auth()->user()->name,
-            'nisn'=> auth()->user()->nisn,
-            'deskripsi'=>$request-> deskripsi,
-            'foto'=> $nama_file,
+        $uid = auth()->user()->id;
+        $siswa_id = siswa::where('users_id', $uid)->value('id');
+
+        $absen = Absen::create([
+            'siswa_id' => $siswa_id,
+            'deskripsi' => $request->deskripsi,
+            'status' => 'piket',
         ]);
+
+        $dok = [
+            [
+                'dokumentasis_id' => $absen->id,
+                'foto' => $nama_fileI,
+                'keterangan' => 'individu',
+            ],
+            [
+                'dokumentasis_id' => $absen->id,
+                'foto' => $nama_fileK,
+                'keterangan' => 'kelompok',
+            ],
+        ];
+
+        dokumentasi::insert($dok);
+
         Session::flash('message', "Selamat, Anda berhasil Absen !!");
         return redirect('/absen');
     }
