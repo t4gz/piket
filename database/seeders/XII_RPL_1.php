@@ -61,6 +61,7 @@ class XII_RPL_1 extends Seeder
                 'jadwals_id' => 1,
                 'alamat' => 'jalan-jalan',
                 'jenis_kelamin' => 'laki -laki',
+                'jadwals_id' => null
             ],
             [
                 'nisn' => 123123123,
@@ -149,6 +150,7 @@ class XII_RPL_1 extends Seeder
                 'nama_kelas_id' => 1,
                 'users_id' => null,
                 'alamat' => 'jalan-jalan',
+                'jadwals_id' => null,
                 'jenis_kelamin' => 'laki - laki',
                 'jadwals_id' => null
             ],
