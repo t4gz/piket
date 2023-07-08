@@ -312,8 +312,8 @@ class XII_RPL_2 extends Seeder
                 'alamat' => 'jalan-jalan',
                 'jenis_kelamin' => 'laki - laki',
             ],
-            
-            
+
+
 
         ];
 

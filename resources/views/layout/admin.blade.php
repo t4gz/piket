@@ -3,7 +3,7 @@
 
 <head>
     <title>@yield('title')</title>
-    @include('master.head')
+    @include('layout.head')
 </head>
 
 <body id="page-top">
@@ -12,7 +12,7 @@
     <div id="wrapper">
 
         <!-- Sidebar -->
-        @include('master.sidebar')
+        @include('layout.sidebar')
         <!-- End of Sidebar -->
 
         <!-- Content Wrapper -->
@@ -22,7 +22,7 @@
             <div id="content">
 
                 <!-- Topbar -->
-                @include('master.topbar')
+                @include('layout.topbar')
                     
                     
                 <!-- End of Topbar -->
@@ -40,7 +40,7 @@
             <!-- End of Main Content -->
 
             <!-- Footer -->
-            @include('master.footer')
+            @include('layout.footer')
             <!-- End of Footer -->
 
         </div>
@@ -50,7 +50,7 @@
     <!-- End of Page Wrapper -->
 
     <!-- Scroll to Top Button-->
-    @include('master.script')
+    @include('layout.script')
 
 </body>
 </html>

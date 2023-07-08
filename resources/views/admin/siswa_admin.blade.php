@@ -1,4 +1,4 @@
-@extends('master.admin')
+@extends('layout.admin')
 @section('title', 'Data')
 @section('content-title', 'Siswa & Guru')
 @section('content')
