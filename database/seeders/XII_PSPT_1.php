@@ -203,13 +203,8 @@ class XII_PSPT_1 extends Seeder
             ],
              [
                 'nisn' => 123123123,
-<<<<<<< HEAD
                 'nama' => 'Elrnira Rahma Qudsyah',
                 'kelas_id' => 7,
-=======
-                'nama' => 'Elmira Rahma Q',
-                'nama_kelas_id' => 7,
->>>>>>> b75ffbcabb0299ef43d2396d4191c934ecf4cf8c
                 'users_id' => null,
                 'alamat' => 'jalan-jalan',
                 'jenis_kelamin' => 'perempuan',
