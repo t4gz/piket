@@ -104,5 +104,8 @@ Route::middleware('siswa')->group(function () {
     });
 });
 
+//landing 
+Route::view('land', 'landing.LandingPageTemplate');
+
 //logout
 Route::post('logout', [LoginController::class, 'logout'])->middleware('auth');
