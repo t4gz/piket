@@ -1,15 +1,14 @@
 <?php
 
-namespace App\Http\Controllers;
 
+namespace App\Http\Controllers\AdminController;
+
+use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use App\Models\Absen;
-use App\Models\jurusan;
-use App\Models\nama_kelas;
-use App\Models\siswa;
-use illuminate\Support\Facades\Session;
+use App\Models\laporan;
+use Illuminate\Support\Facades\Session;
 
-class AdminAbsenController extends Controller
+class AdminLaporanController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -18,9 +17,8 @@ class AdminAbsenController extends Controller
      */
     public function index()
     {
-        $data = Absen::orderBy('created_at', 'desc')->get();
-        $absen = Absen::where('created_at',today())->get();
-        return view('admin.absen_admin', compact('absen'));
+        $data = laporan::orderBy('created_at','desc')->get();  
+        return view('admin.laporan_admin', compact('data'));
     }
 
     /**
@@ -52,8 +50,8 @@ class AdminAbsenController extends Controller
      */
     public function show($id)
     {
-        $absen = Absen::find($id);
-        return view('admin.show_absen_admin', compact('absen'));
+        $laporan=laporan::find($id);
+        return view('admin.show_laporan_admin', compact('laporan'));
     }
 
     /**
@@ -92,8 +90,8 @@ class AdminAbsenController extends Controller
 
     public function hapus()
     {
-        // Absen::truncate();
-        // Session::flash('hapus', "Berhasil Menghapus !!");
-        // return redirect('/absen-admin');
+        laporan::truncate();
+        Session::flash('hapus', "Berhasil Menghapus !!");
+        return redirect('/laporan-admin');
     }
 }

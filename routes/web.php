@@ -3,7 +3,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LoginController;
-use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\AdminController\DashboardController;
 use App\Http\Controllers\DashboardSiswaController;
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\SiswaController;
@@ -31,37 +31,9 @@ use App\Models\siswa;
 Route::get(
     '/',
     function () {
-        $kelas = nama_kelas::with('jurusan')->withCount('siswa')->get();
-        $jurusan = jurusan::all();
-        $spj = [];
-        $currentJurusan = null;
-        $siswaCount = 0;
-
-        foreach ($kelas as $k) {
-            if ($currentJurusan !== $k->jurusan_id) {
-                if (!is_null($currentJurusan)) {
-                    // Menyimpan total siswa per jurusan sebelumnya
-                    $spj[$currentJurusan] = $siswaCount;
-                }
-
-                $currentJurusan = $k->jurusan_id;
-                $siswaCount = 0;
-            }
-
-            $siswaCount += $k->siswa_count;
-            $a[] = $k;
-        }
-
-        // Menyimpan total siswa untuk jurusan terakhir
-        if (!is_null($currentJurusan)) {
-            $spj[$currentJurusan] = $siswaCount;
-        }
-        // return $spj;
-        $absened = Absen::where('created_at', today())->get();
-        $absent = siswa::all()->count();
-
-        return view('standard_page', compact('jurusan', 'spj', 'absened', 'absent'));
+        return view('standard_page');
     }
+
 );
 
 Route::middleware('guest')->group(function () {

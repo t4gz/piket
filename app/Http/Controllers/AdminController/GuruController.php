@@ -1,12 +1,11 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\AdminController;
 
+use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use App\Models\laporan;
-use Illuminate\Support\Facades\Session;
 
-class AdminLaporanController extends Controller
+class GuruController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,8 +14,7 @@ class AdminLaporanController extends Controller
      */
     public function index()
     {
-        $data = laporan::orderBy('created_at','desc')->get();  
-        return view('admin.laporan_admin', compact('data'));
+        //
     }
 
     /**
@@ -48,8 +46,7 @@ class AdminLaporanController extends Controller
      */
     public function show($id)
     {
-        $laporan=laporan::find($id);
-        return view('admin.show_laporan_admin', compact('laporan'));
+        //
     }
 
     /**
@@ -84,12 +81,5 @@ class AdminLaporanController extends Controller
     public function destroy($id)
     {
         //
-    }
-
-    public function hapus()
-    {
-        laporan::truncate();
-        Session::flash('hapus', "Berhasil Menghapus !!");
-        return redirect('/laporan-admin');
     }
 }
