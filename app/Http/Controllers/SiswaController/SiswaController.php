@@ -1,12 +1,13 @@
 <?php
 
-namespace App\Http\Controllers;
 
-use App\Models\guru;
-use App\Models\siswa;
+namespace App\Http\Controllers\SiswaController;
+
+use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\Models\Siswa;
 
-class DashboardSiswaController extends Controller
+class SiswaController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,16 +16,7 @@ class DashboardSiswaController extends Controller
      */
     public function index()
     {
-        $auth = auth()->user()->id;
-        // $siswa = siswa::where('users_id', $auth)->with('jadwals','absens')->first();
-        $siswa = siswa::where('users_id', $auth)->first();
-        $soj = siswa::whereHas('jadwals', function ($query) use ($siswa) {
-            // $query->where('jadwals_id', optional($siswa->jadwals)->id)->where('nama_kelas_id', $siswa->nama_kelas_id);
-            $query->where('jadwals_id', optional($siswa->jadwals)->id)->where('nama_kelas_id', $siswa->nama_kelas_id);
-        })->get();
-        $guru = guru::where('namakelas_id', $siswa->nama_kelas_id)->first();
-        $compact = ['auth', 'siswa', 'soj', 'guru'];
-        return view('siswa.dashboard_siswa', compact($compact));
+        return view('admin.siswa_admin');
     }
 
     /**
@@ -45,7 +37,7 @@ class DashboardSiswaController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        // 
     }
 
     /**
@@ -56,12 +48,7 @@ class DashboardSiswaController extends Controller
      */
     public function show($id)
     {
-        // return view();
-    }
-
-    public function info($id)
-    {
-        return view('info_siswa');
+        
     }
 
     /**

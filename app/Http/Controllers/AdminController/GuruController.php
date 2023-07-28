@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\AdminController;
 
+use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use App\Models\Siswa;
 
-class SiswaController extends Controller
+class GuruController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,7 +14,7 @@ class SiswaController extends Controller
      */
     public function index()
     {
-        return view('admin.siswa_admin');
+        //
     }
 
     /**
@@ -35,7 +35,7 @@ class SiswaController extends Controller
      */
     public function store(Request $request)
     {
-        // 
+        //
     }
 
     /**
@@ -46,7 +46,7 @@ class SiswaController extends Controller
      */
     public function show($id)
     {
-        
+        //
     }
 
     /**

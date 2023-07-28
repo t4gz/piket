@@ -1,12 +1,14 @@
 <?php
 
-namespace App\Http\Controllers;
 
+namespace App\Http\Controllers\SiswaController;
+
+use App\Http\Controllers\Controller;
+use App\Models\guru;
+use App\Models\siswa;
 use Illuminate\Http\Request;
-use App\Models\laporan;
-use Illuminate\Support\Facades\Session;
 
-class AdminLaporanController extends Controller
+class DashboardSiswaController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,8 +17,16 @@ class AdminLaporanController extends Controller
      */
     public function index()
     {
-        $data = laporan::orderBy('created_at','desc')->get();  
-        return view('admin.laporan_admin', compact('data'));
+        $auth = auth()->user()->id;
+        // $siswa = siswa::where('users_id', $auth)->with('jadwals','absens')->first();
+        $siswa = siswa::where('users_id', $auth)->first();
+        $soj = siswa::whereHas('jadwals', function ($query) use ($siswa) {
+            // $query->where('jadwals_id', optional($siswa->jadwals)->id)->where('nama_kelas_id', $siswa->nama_kelas_id);
+            $query->where('jadwals_id', optional($siswa->jadwals)->id)->where('nama_kelas_id', $siswa->nama_kelas_id);
+        })->get();
+        $guru = guru::where('namakelas_id', $siswa->nama_kelas_id)->first();
+        $compact = ['auth', 'siswa', 'soj', 'guru'];
+        return view('siswa.dashboard_siswa', compact($compact));
     }
 
     /**
@@ -48,8 +58,12 @@ class AdminLaporanController extends Controller
      */
     public function show($id)
     {
-        $laporan=laporan::find($id);
-        return view('admin.show_laporan_admin', compact('laporan'));
+        // return view();
+    }
+
+    public function info($id)
+    {
+        return view('info_siswa');
     }
 
     /**
@@ -84,12 +98,5 @@ class AdminLaporanController extends Controller
     public function destroy($id)
     {
         //
-    }
-
-    public function hapus()
-    {
-        laporan::truncate();
-        Session::flash('hapus', "Berhasil Menghapus !!");
-        return redirect('/laporan-admin');
     }
 }
