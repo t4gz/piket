@@ -24,8 +24,7 @@ class LoginController extends Controller
             $request->session()->regenerate();
 
             if (auth()->user()->roles->role == 'admin') {
-                // return 'admin';
-                return redirect()->intended('admin');
+                return redirect()->intended('/admin');
             }
 
             if (auth()->user()->roles->role == 'siswa') {

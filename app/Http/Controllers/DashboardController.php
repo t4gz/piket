@@ -48,10 +48,23 @@ class DashboardController extends Controller
         if (!is_null($currentJurusan)) {
             $spj[$currentJurusan] = $siswaCount;
         }
-        $data_absen= ['jurusan','spj','absent','absened'];
-        return view('admin.dashboard_admin', compact('siswa', 'laporan',$data_absen));
+        $data_absen = ['jurusan', 'spj', 'absent', 'absened'];
+        return view('admin.dashboard_admin', compact('siswa', 'laporan', $data_absen));
     }
 
+
+    public function listguru()
+    {
+        return view('admin.listguru_admin');
+    }
+    public function listabsen()
+    {
+        return view('admin.absen_admin');
+    }
+    public function listlaporan()
+    {
+        return view('admin.');
+    }
     /**
      * Show the form for creating a new resource.
      *

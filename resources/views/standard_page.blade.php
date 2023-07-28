@@ -41,19 +41,6 @@
                     <li class="nav-item">
                         <a class="nav-link active" href="/register">Register</a>
                     </li>
-                    <!-- <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown
-          </a>
-          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li>
-              <hr class="dropdown-divider">
-            </li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
-        </li> -->
                 </ul>
             </div>
         </div>
@@ -62,27 +49,25 @@
 
 
     <div class="center">
-        <h1 class="text-center">selamat dtang</h1>
+        <h1 class="text-center">selamat datang</h1>
     </div>
 
-    <div>
+    {{-- <div>
         <div class="table-responsive">
             <table class="table table-primary">
-                @foreach ($spj as $j)
-                @endforeach
             </table>
         </div>
 
         <canvas id=jumlah_siswa></canvas>
         <canvas id=jumlah_absen></canvas>
 
-    </div>
+    </div> --}}
 
 </body>
 
 </html>
 <script src="//cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.6/Chart.bundle.js"></script>
-<script>
+{{-- <script>
     var data = {
         labels: [
             @foreach ($jurusan as $j)
@@ -164,4 +149,4 @@
             }]
         }
     });
-</script>
+</script> --}}
